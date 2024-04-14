@@ -6,6 +6,7 @@ import GalleryImg5 from '../src/img/gallery/5.png';
 import GalleryImg6 from '../src/img/gallery/6.png';
 import GalleryImg7 from '../src/img/gallery/7.png';
 import GalleryImg8 from '../src/img/gallery/8.png';
+import Logo from '../src/img/header/logo.png';
 
 export const galleryData = {
 
@@ -59,4 +60,8 @@ export const galleryData = {
         height: 412,
       },
     ],
+  };
+
+  export const headerData = {
+    logo: Logo,
   };

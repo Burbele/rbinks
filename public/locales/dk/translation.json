@@ -9,5 +9,50 @@
     },
     "btnText2": "Lær mere",
     "heading2": "Mit seneste arbejde",
-    "btnText3": "Se alle"
+    "btnText3": "Se alle",
+    "heading3": "Kom i kontakt med mig:",
+    "information": {
+        "studio": "Epic Ink Tattoo Studio",
+        "location": "Aarhus, Danmark",
+        "address": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "email": "rebecabianca1211@gmail.com",
+        "directions": "Få placering"
+    },
+    "form": {
+        "name": "Write your name here",
+        "youremail": "Write your email address",
+        "message": "Write your messages here",
+        "btnText4": "Send it"
+    },
+    "about": {
+        "aboutme": "Om Mig",
+        "aboutdescription": "Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus",
+        "aboutaddress": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "aboutemail": "rebecabianca1211@gmail.com"
+    },
+    "links": {
+        "linkname": "Nyttige links",
+        "linkabout": "Om mig",
+        "linkgallery": "Min galleri",
+        "linkaftercare": "Efterbehandling",
+        "linkappointment": "Book en aftale"
+    },
+    "program": {
+        "programname": "Arbejdstid",
+        "day1": "Man - Fre / 10:00 - 17:00",
+        "day2": "Lør / ingen arbejde denne dag",
+        "day3": "Søn / kun aftaler"
+    },
+    "socials": {
+        "socialname": "Følg mig",
+        "social1": "@r.b.ink.s",
+        "social2": "@r.b.ink.s"
+    },
+    "navData": {
+        "navhome": "Hjem",
+        "navabout": "Om",
+        "navgallery": "Galleri",
+        "navaftercare": "Efterbehandling",
+        "navappointments": "Aftaler"
+    }
 }
