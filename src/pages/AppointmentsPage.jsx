@@ -1,11 +1,12 @@
 import React from 'react';
+import Calendly from '../components/Calendly';
 
 
 const AppointmentsPage = () => {
   return (
-    <div>
-     <h1>Hello</h1>
-    </div>
+    <section className='min-h-[40vh] lg:h-[948px] relative mt-[120px] lg:mt-[150px]'>
+     <Calendly />
+    </section>
   );
 };
 
