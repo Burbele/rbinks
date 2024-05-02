@@ -1,11 +1,12 @@
 import React from 'react';
+import AftercareFAQ from '../components/AftercareFAQ';
 
 
 const AftercarePage = () => {
   return (
-    <div>
-     <h1>Hello</h1>
-    </div>
+    <section className='section relative mt-[40px] lg:mt-0'>
+     <AftercareFAQ />
+    </section>
   );
 };
 

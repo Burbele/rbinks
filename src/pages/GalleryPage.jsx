@@ -1,11 +1,11 @@
 import React from 'react';
-
+import GallerySection from '../components/GallerySection'
 
 const GalleryPage = () => {
   return (
-    <div>
-     <h1>Hello</h1>
-    </div>
+    <section className='section relative mt-[40px] lg:mt-0'>
+     <GallerySection />
+    </section>
   );
 };
 
