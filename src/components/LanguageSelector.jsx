@@ -1,33 +1,35 @@
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
+import { FlagIcon } from "react-flag-kit";
 
 const languages = [
-    {code: "en", lang: "EN"},
-    {code: "dk", lang: "DK"},
+    { code: "en", lang: "", countryCode: "GB" },
+    { code: "dk", lang: "", countryCode: "DK" },
 ];
 
 const LanguageSelector = () => {
-    const {i18n} = useTranslation();
+    const { i18n } = useTranslation();
 
     const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng);
     };
 
     return (
-    <div>
-        {languages.map((lng) => {
-            return (
-                <ul className='flex justify-center items-center gap-x-[30px]'>
-                <button className={lng.code === i18n.language ? "selected" : ""} 
-                key={lng.code} 
-                onClick={() => changeLanguage(lng.code)}
+        <div className="flex justify-center items-center gap-x-4">
+            {languages.map((lng) => (
+                <button
+                    key={lng.code}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-md border ${
+                        lng.code === i18n.language ? "selected" : "opacity-50"
+                    }`}
+                    onClick={() => changeLanguage(lng.code)}
                 >
-                {lng.lang}
+                    <FlagIcon code={lng.countryCode} size={24} /> {/* Display the flag icon */}
+                    {lng.lang}
                 </button>
-                </ul>
-            );
-        })}
-    </div>
-    )
+            ))}
+        </div>
+    );
 };
 
 export default LanguageSelector;
+
