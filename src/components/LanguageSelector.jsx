@@ -23,7 +23,7 @@ const LanguageSelector = () => {
                     }`}
                     onClick={() => changeLanguage(lng.code)}
                 >
-                    <FlagIcon code={lng.countryCode} size={24} /> {/* Display the flag icon */}
+                    <FlagIcon code={lng.countryCode} size={24} /> 
                     {lng.lang}
                 </button>
             ))}
