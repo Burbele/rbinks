@@ -58,7 +58,9 @@ const GallerySection = () => {
         whileInView={'show'}
         viewport={{ once: false, amount: 0.2 }}
         className='flex justify-center'>
-        <Link to='/gallery' className='btn btn-lg btn-dark'>
+        <Link to='/gallery' className='btn btn-lg btn-dark'
+        onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
+        >
           {t('btnText3')} <div className='text-xl'><IoMdArrowForward /></div>
         </Link>
       </motion.div>

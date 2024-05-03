@@ -3,6 +3,7 @@ import {motion} from 'framer-motion';
 import { fadeIn } from '../variants';
 import { IoMdArrowForward } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,13 +27,18 @@ const Hero = () => {
     initial="hidden" 
     whileInView={'show'} 
     className='container mx-auto min-h-[40vh] lg:h-full flex items-center justify-center xl:justify-end'>
-      <div className='text-white text-center lg:text-left lg:max-w-[640px]'>
+      <div className='text-white text-center lg:text-left lg:max-w-[840px]'>
         <motion.h1 variants={fadeIn('down')} className='h1'>{t('title')}</motion.h1>
         <motion.p variants={fadeIn('down')} className='mb-8 lg:mb-16 max-w-lg leading-relaxed'>{t('subtitle')}</motion.p>
         <motion.div variants={fadeIn('down')}>
-          <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
-          {t('btnText')} <div className='text-xl'><IoMdArrowForward /></div>
-          </button>
+        <Link 
+        to='/appointments' 
+        className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0 inline-flex'
+        onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
+        >
+        {t('btnText')} <div className='text-xl'><IoMdArrowForward /></div>
+        </Link>
+
         </motion.div>
       </div>
       <div className='hidden xl:flex absolute -bottom-2 right-0 left-0 before:content-outlineText'></div>

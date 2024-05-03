@@ -36,7 +36,9 @@ const About = () => {
               <div className='max-w-[530px] text-grey'>
                 <p className='mb-6'>{line1}</p>
                 <p className='mb-9'>{line2}</p>
-                <Link to='/about' className='btn btn-lg btn-link'>
+                <Link to='/about' className='btn btn-lg btn-link'
+                onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
+                >
                 {t('btnText2')} <div className='text-xl'><IoMdArrowForward /></div>
                 </Link>
               </div>
