@@ -24,7 +24,7 @@ const NavMobile = () => {
               <a href="/aftercare" className='text-2xl font-primary uppercase'>{navaftercare}</a>
           </li>
           <li >
-              <a href="/"appointments className='text-2xl font-primary uppercase'>{navappointments}</a>
+              <a href="/appointments" className='text-2xl font-primary uppercase'>{navappointments}</a>
           </li>
         
     </ul>
