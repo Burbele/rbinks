@@ -9,7 +9,7 @@ const AboutPage = () => {
     <section className='bg-[#f9f9f9] section relative mt-[120px] lg:mt-[150px] pt-16 items-center'>
       <div className='container mx-auto'>
         <motion.h2
-          variants={fadeIn('up')}
+          variants={fadeIn('right')}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.6 }}
