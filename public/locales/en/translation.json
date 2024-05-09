@@ -1,30 +1,15 @@
 {
-    "title": "I'm Rebeca.",
-    "subtitle": "Inking unique stories with delicate lines and detailed stipples – your skin, my canvas.",
-    "btnText": "book an appointment",
-    "heading": "My Story:",
-    "description": {
-        "line1": "Ever since I was a kid, I've been fascinated by tattoos. I'd cover myself with temporary tattoo stickers and draw designs directly on my skin with pens. This childhood hobby sparked my lifelong passion for art. I slowly started my journey in 2018, when I first picked up a needle and experimented with the stick & poke technique on myself.",
-        "line2": "After graduating with a degree in Fine Art from Bristol University in England, I moved to Denmark. Here, I continue my journey into the world of art and tattooing. My work is characterized by its delicate and elegant style. I strive to create tattoos that are not only visually captivating but also deeply meaningful for each individual."
+    "__Comment__Navigation": "Navigation",
+    "navData": {
+        "navhome": "Home",
+        "navabout": "About",
+        "navgallery": "Gallery",
+        "navaftercare": "Aftercare",
+        "navappointments": "Appointments"
     },
-    "btnText2": "Get to know me",
-    "heading2": "My latest work",
-    "heading22": "My gallery",
-    "btnText3": "View all",
-    "heading3": "Get in touch with me:",
-    "information": {
-        "studio": "Epic Ink Tattoo Studio",
-        "location": "Aarhus, Denmark",
-        "address": "Viborgvej 142, St. Th., 8210 Aarhus V",
-        "email": "rebecabianca1211@gmail.com",
-        "directions": "Get location"
-    },
-    "form": {
-        "name": "Write your name here",
-        "youremail": "Write your email address",
-        "message": "Write your messages here",
-        "btnText4": "Send it"
-    },
+
+
+    "__Comment__Footer": "Footer",
     "about": {
         "aboutme": "About Me",
         "aboutdescription": "Hi, I'm Rebeca, a tattoo apprentice based in Aarhus, Denmark. I craft delicate, elegant tattoos inspired by art and nature.",
@@ -49,11 +34,108 @@
         "social1": "@r.b.ink.s",
         "social2": "@r.b.ink.s"
     },
-    "navData": {
-        "navhome": "Home",
-        "navabout": "About",
-        "navgallery": "Gallery",
-        "navaftercare": "Aftercare",
-        "navappointments": "Appointments"
-    }
+
+    
+    "__Comment__HOME__PAGE": "Home Page",
+    "__Comment__Hero": "Hero Section",
+    "title": "I'm Rebeca.",
+    "subtitle": "Inking unique stories with delicate lines and detailed stipples – your skin, my canvas.",
+    "btnText": "book an appointment",
+
+
+    "__Comment__About": "About Section",
+    "heading": "My Story:",
+    "description": {
+        "line1": "Ever since I was a kid, I've been fascinated by tattoos. I'd cover myself with temporary tattoo stickers and draw designs directly on my skin with pens. This childhood hobby sparked my lifelong passion for art. I slowly started my journey in 2018, when I first picked up a needle and experimented with the stick & poke technique on myself.",
+        "line2": "After graduating with a degree in Fine Art from Bristol University in England, I moved to Denmark. Here, I continue my journey into the world of art and tattooing. My work is characterized by its delicate and elegant style. I strive to create tattoos that are not only visually captivating but also deeply meaningful for each individual."
+    },
+    "btnText2": "Get to know me",
+
+
+    "__Comment__Gallery": "Gallery Section",
+    "heading2": "My latest work",
+    "btnText3": "View all",
+
+
+    "__Comment__Contacts": "Contacts Section",
+    "heading3": "Get in touch with me:",
+    "information": {
+        "studio": "Epic Ink Tattoo Studio",
+        "location": "Aarhus, Denmark",
+        "address": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "email": "rebecabianca1211@gmail.com",
+        "directions": "Get location"
+    },
+    "form": {
+        "name": "Write your name here",
+        "youremail": "Write your email address",
+        "message": "Write your messages here",
+        "btnText4": "Send it"
+    },
+
+
+    "__Comment__ABOUT__PAGE": "About Page",
+    "heading4": "Get to know me!",
+    "subtitle2": "About me",
+    "aboutpage": {
+        "about1": "My name is Rebeca, and I am a Bristol University Fine Art graduate with a deep passion for art. As an aspiring tattoo apprentice, I am on an exciting journey to combine my love for artistic expression with the unique medium of tattooing.",
+        "about2": "Drawing inspiration from my fine art background, I strive to create tattoos that are not only visually captivating but also deeply meaningful for each individual.",
+        "about3": "Through my work, I aim to bring together the worlds of fine art and body art, offering a personalized and artistic experiencefor my clients.",
+        "about4": "I draw inspiration from things I love when creating designs, such as: painting, photography, nature, and travel."
+    },
+    "subtitle3": "Experience",
+    "experience": {
+        "experiencetitle1": "Certificate In Art, Craft & Design",
+        "experiencedescription1": "Joined the arts programme I have been a part of in the previous years, but this time in a higher age group where I have developed the skills I had learned. Followed by an exhibition at the end of the year which was held in Mission Gallery, Swansea.",
+        "experiencetitle2": "Foundation In Art & Design",
+        "experiencedescription2": "Studied and achieved a foundation diploma level 3 in Art and Design. During this foundation year I worked on projects overlooking different areas of art with the aim of choosing the best suited path. Having done these projects I decided to follow the path of Fine Art.",
+        "experiencetitle3": "Bachelor Of Arts In Fine Art",
+        "experiencedescription3": "During my degree, I participated in group exhibitions at Spike Island Studios, Bristol, gaining insight into the life of a Fine Artist. Additionally, CRIW CELF Crew invited me to exhibit at Mission Gallery, Swansea, showcasing my latest university works.",
+        "experiencetitle4": "Tattoo Apprentice",
+        "experiencedescription4": "I relocated to Denmark in 2023 to begin a journey as a tattoo apprentice. Specializing in minimalist designs, my work often showcases intricate one-line drawings and pointillism techniques."
+    },
+
+
+    "__Comment__GALLERY__PAGE": "Gallery Page",
+    "heading22": "My gallery",
+
+
+
+    "__Comment__AFTERCARE__PAGE": "Aftercare Page",
+    "heading5": "Your guide to tattoo aftercare",
+    "aftercaredescription": "Thanks so much for choosing to get a tattoo with me! Here are some tips to help your tattoo heal perfectly. If you have any questions, don’t hesitate to reach out!",
+    "aftercare": {
+        "q1": "How long should I keep the foil on my new tattoo?",
+        "a1": "You can remove the foil after 3-4 hours. If you have second-skin, it can be removed after 1-3 days, but make sure not to leave it on for more than 3 days.",
+        "q2": "What is the best way to remove the foil or second-skin?",
+        "a2": "Remove the foil or second-skin with clean hands. For second-skin, it's best to remove it with water to avoid any discomfort.",
+        "q3": "How should I clean my new tattoo?",
+        "a3": "Gently wash your tattoo with water or fragrance-free soap. Ensure that all vaseline, blood, and excess ink are cleaned off. Do not apply new foil after cleaning.",
+        "q4": "What should I use to dry my tattoo?",
+        "a4": "Gently pat your tattoo dry with a paper towel or a clean cotton towel. Avoid rubbing or scratching the tattoo.",
+        "q5": "How often should I apply tattoo cream?",
+        "a5": "Apply a very thin layer of tattoo cream (such as panthenol or a similar product) 3-5 times a day.",
+        "q6": "Can I expose my new tattoo to sunlight?",
+        "a6": "Do not expose your new tattoo to direct sunlight or sun/tanning beds for the first 3 weeks.",
+        "q7": "When can I start using sunscreen on my tattoo?",
+        "a7": "Do not use sunscreen until your tattoo is fully healed.",
+        "q8": "Is it safe to swim after getting a new tattoo?",
+        "a8": "Avoid swimming in pools or ocean water for the first 3 weeks after getting your tattoo.",
+        "q9": "What type of clothing should I wear after getting a tattoo?",
+        "a9": "Wear soft cotton clothes and allow your tattoo to breathe as much as possible. Avoid wearing tight clothing until your tattoo is completely healed.",
+        "q10": "Can I scratch or pick at my new tattoo?",
+        "a10": "Do not scratch or pick at your tattoo. This can cause infection and damage the tattoo.",
+        "q11": "Should I let others touch my new tattoo?",
+        "a11": "Do not let other people touch your tattoo while it is healing, and avoid contact with dirty objects or surfaces.",
+        "q12": "What precautions should I take if I have pets?",
+        "a12": "Keep pets away from your tattoo while it is healing to avoid any risk of infection.",
+        "q13": "How much water should I drink after getting a tattoo?",
+        "a13": "Drink 2-3 liters of water a day for the first 4-5 days to help speed up the healing process.",
+        "q14": "Can I exercise after getting a new tattoo?",
+        "a14": "Exercise with great caution. Avoid contact sports and activities that may stretch the skin too much or cause excessive sweating. If you must train, ensure you clean your tattoo well afterward."
+    },
+
+    "__Comment__APPOINTMENTS__PAGE": "Appointments Page",
+    "heading6": "Book Your Tattoo Session",
+    "appointmentsdescription": "Below you can see my availability. A full day session costs 1000 kr, with a 500 kr deposit required. This is a preliminary booking; I will contact you for design references, tattoo ideas, and payment instructions after you book."
 }

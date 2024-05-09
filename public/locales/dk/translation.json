@@ -1,59 +1,134 @@
 {
-    "title": "Jeg er Rebeca.",
-    "subtitle": "I skaber minimalistiske tatoveringsdesigns, der ofte indeholder en-linje-tegninger eller punktillismeteknikker.",
-    "btnText": "book en aftale",
-    "heading": "Min historie:",
-    "description": {
-        "line1": "In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.",
-        "line2": "Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc."
-    },
-    "btnText2": "Lær mere",
-    "heading2": "Mit seneste arbejde",
-    "heading22": "Min galleri",
-    "btnText3": "Se alle",
-    "heading3": "Kom i kontakt med mig:",
-    "information": {
-        "studio": "Epic Ink Tattoo Studio",
-        "location": "Aarhus, Danmark",
-        "address": "Viborgvej 142, St. Th., 8210 Aarhus V",
-        "email": "rebecabianca1211@gmail.com",
-        "directions": "Få placering"
-    },
-    "form": {
-        "name": "Write your name here",
-        "youremail": "Write your email address",
-        "message": "Write your messages here",
-        "btnText4": "Send it"
-    },
-    "about": {
-        "aboutme": "Om Mig",
-        "aboutdescription": "Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus",
-        "aboutaddress": "Viborgvej 142, St. Th., 8210 Aarhus V",
-        "aboutemail": "rebecabianca1211@gmail.com"
-    },
-    "links": {
-        "linkname": "Nyttige links",
-        "linkabout": "Om mig",
-        "linkgallery": "Min galleri",
-        "linkaftercare": "Efterbehandling",
-        "linkappointment": "Book en aftale"
-    },
-    "program": {
-        "programname": "Arbejdstid",
-        "day1": "Man - Fre / 10:00 - 17:00",
-        "day2": "Lør / ingen arbejde denne dag",
-        "day3": "Søn / kun aftaler"
-    },
-    "socials": {
-        "socialname": "Følg mig",
-        "social1": "@r.b.ink.s",
-        "social2": "@r.b.ink.s"
-    },
+    "__Comment__Navigation": "Navigation",
     "navData": {
         "navhome": "Hjem",
         "navabout": "Om",
         "navgallery": "Galleri",
         "navaftercare": "Efterbehandling",
         "navappointments": "Aftaler"
-    }
+    },
+
+    "__Comment__Footer": "Footer",
+    "about": {
+        "aboutme": "Om mig",
+        "aboutdescription": "Hej, jeg er Rebeca, en tatoveringslærling baseret i Aarhus, Danmark. Jeg skaber delikate, elegante tatoveringer inspireret af kunst og natur.",
+        "aboutaddress": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "aboutemail": "rebecabianca1211@gmail.com"
+    },
+    "links": {
+        "linkname": "Nyttige links",
+        "linkabout": "Om mig",
+        "linkgallery": "Mit galleri",
+        "linkaftercare": "Efterbehandling",
+        "linkappointment": "Book en aftale"
+    },
+    "program": {
+        "programname": "Arbejdstid",
+        "day1": "Man - Fre / 10:00 - 17:00",
+        "day2": "Lør / ingen arbejde på denne dag",
+        "day3": "Søn / kun efter aftale"
+    },
+    "socials": {
+        "socialname": "Følg mig",
+        "social1": "@r.b.ink.s",
+        "social2": "@r.b.ink.s"
+    },
+
+    "__Comment__HOME__PAGE": "Home Page",
+    "__Comment__Hero": "Hero Section",
+    "title": "Jeg er Rebeca.",
+    "subtitle": "Indfanger unikke historier med delikate linjer og detaljerede prikker – din hud, mit lærred.",
+    "btnText": "book en aftale",
+
+    "__Comment__About": "About Section",
+    "heading": "Min historie:",
+    "description": {
+        "line1": "Lige siden jeg var barn, har jeg været fascineret af tatoveringer. Jeg dækkede mig med midlertidige tatoveringsklistermærker og tegnede designs direkte på min hud med kuglepenne. Denne barndomshobby tændte min livslange passion for kunst. Jeg begyndte langsomt min rejse i 2018, da jeg første gang tog en nål op og eksperimenterede med stick & poke-teknikken på mig selv.",
+        "line2": "Efter at have afsluttet min uddannelse med en grad i Fine Art fra Bristol University i England, flyttede jeg til Danmark. Her fortsætter jeg min rejse ind i kunstens og tatoveringens verden. Mit arbejde er kendetegnet ved sin delikate og elegante stil. Jeg stræber efter at skabe tatoveringer, der ikke kun er visuelt fængslende, men også dybt meningsfulde for hver enkelt person."
+    },
+    "btnText2": "Lær mig at kende",
+
+    "__Comment__Gallery": "Gallery Section",
+    "heading2": "Mit seneste arbejde",
+    "btnText3": "Se alle",
+
+    "__Comment__Contacts": "Contacts Section",
+    "heading3": "Kom i kontakt med mig:",
+    "information": {
+        "studio": "Epic Ink Tattoo Studio",
+        "location": "Aarhus, Danmark",
+        "address": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "email": "rebecabianca1211@gmail.com",
+        "directions": "Få vejledning"
+    },
+    "form": {
+        "name": "Skriv dit navn her",
+        "youremail": "Skriv din e-mailadresse",
+        "message": "Skriv dine beskeder her",
+        "btnText4": "Send"
+    },
+
+    "__Comment__ABOUT__PAGE": "About Page",
+    "heading4": "Lær mig at kende!",
+    "subtitle2": "Om mig",
+    "aboutpage": {
+        "about1": "Mit navn er Rebeca, og jeg er kandidat fra Bristol University i Fine Art med en dyb passion for kunst. Som en håbefuld tatoveringslærling er jeg på en spændende rejse for at kombinere min kærlighed til kunstnerisk udtryk med det unikke medium tatovering.",
+        "about2": "Jeg henter inspiration fra min fine art baggrund og stræber efter at skabe tatoveringer, der ikke kun er visuelt fængslende, men også dybt meningsfulde for hver enkelt person.",
+        "about3": "Gennem mit arbejde sigter jeg mod at forene verdenerne af fine art og kropskunst og tilbyde en personlig og kunstnerisk oplevelse for mine klienter.",
+        "about4": "Jeg henter inspiration fra ting, jeg elsker, når jeg skaber designs, såsom: maleri, fotografering, natur og rejser."
+    },
+    "subtitle3": "Erfaring",
+    "experience": {
+        "experiencetitle1": "Certificate In Art, Craft & Design",
+        "experiencedescription1": "Deltog i kunstprogrammet, som jeg har været en del af i de foregående år, men denne gang i en højere aldersgruppe, hvor jeg har udviklet de færdigheder, jeg havde lært. Efterfulgt af en udstilling ved årets afslutning, der blev afholdt i Mission Gallery, Swansea.",
+        "experiencetitle2": "Foundation In Art & Design",
+        "experiencedescription2": "Studerede og opnåede et grunddiplom niveau 3 i Kunst og Design. I løbet af dette grundår arbejdede jeg på projekter, der omfattede forskellige kunstområder med det formål at vælge den bedst egnede vej. Efter at have arbejdet på disse projekter besluttede jeg at følge vejen inden for Fine Art.",
+        "experiencetitle3": "Bachelor i Fine Art",
+        "experiencedescription3": "Under min uddannelse deltog jeg i gruppeudstillinger på Spike Island Studios, Bristol, og fik indsigt i livet som Fine Artist. Derudover inviterede CRIW CELF Crew mig til at udstille i Mission Gallery, Swansea, hvor jeg fremviste mine seneste universitetsværker.",
+        "experiencetitle4": "Tattoo lærling",
+        "experiencedescription4": "Jeg flyttede til Danmark i 2023 for at begynde en rejse som tatoveringslærling. Specialiseret i minimalistiske designs viser mit arbejde ofte indviklede en-linje tegninger og pointillisme teknikker."
+    },
+
+    "__Comment__GALLERY__PAGE": "Gallery Page",
+    "heading22": "Mit galleri",
+
+    "__Comment__AFTERCARE__PAGE": "Aftercare Page",
+    "heading5": "Din guide til tatoveringspleje",
+    "aftercaredescription": "Tusind tak for at vælge at få en tatovering hos mig! Her er nogle tips til at hjælpe din tatovering med at hele perfekt. Hvis du har nogen spørgsmål, er du velkommen til at kontakte mig!",
+    "aftercare": {
+        "q1": "Hvor længe skal jeg beholde folien på min nye tatovering?",
+        "a1": "Du kan fjerne folien efter 3-4 timer. Hvis du har second-skin, kan det fjernes efter 1-3 dage, men sørg for ikke at lade det sidde i mere end 3 dage.",
+        "q2": "Hvad er den bedste måde at fjerne folien eller second-skin på?",
+        "a2": "Fjern folien eller second-skin med rene hænder. For second-skin er det bedst at fjerne det med vand for at undgå ubehag.",
+        "q3": "Hvordan skal jeg rense min nye tatovering?",
+        "a3": "Vask forsigtigt din tatovering med vand eller duftfri sæbe. Sørg for at fjerne al vaseline, blod og overskydende blæk. Påfør ikke ny folie efter rengøring.",
+        "q4": "Hvad skal jeg bruge til at tørre min tatovering?",
+        "a4": "Tør forsigtigt din tatovering med et papirhåndklæde eller et rent bomuldshåndklæde. Undgå at gnide eller kradse tatoveringen.",
+        "q5": "Hvor ofte skal jeg påføre tatoveringscreme?",
+        "a5": "Påfør et meget tyndt lag tatoveringscreme (såsom panthenol eller et lignende produkt) 3-5 gange om dagen.",
+        "q6": "Kan jeg udsætte min nye tatovering for sollys?",
+        "a6": "Udsæt ikke din nye tatovering for direkte sollys eller solarium i de første 3 uger.",
+        "q7": "Hvornår kan jeg begynde at bruge solcreme på min tatovering?",
+        "a7": "Brug ikke solcreme før din tatovering er fuldt helet.",
+        "q8": "Er det sikkert at svømme efter at have fået en ny tatovering?",
+        "a8": "Undgå at svømme i pooler eller havvand i de første 3 uger efter at have fået din tatovering.",
+        "q9": "Hvilken type tøj skal jeg bære efter at have fået en tatovering?",
+        "a9": "Bær blødt bomuldstøj og lad din tatovering ånde så meget som muligt. Undgå at bære stramt tøj, indtil din tatovering er helt helet.",
+        "q10": "Kan jeg kradse eller pille ved min nye tatovering?",
+        "a10": "Undgå at kradse eller pille ved din tatovering. Dette kan forårsage infektion og skade tatoveringen.",
+        "q11": "Skal jeg lade andre røre ved min nye tatovering?",
+        "a11": "Lad ikke andre røre ved din tatovering, mens den heler, og undgå kontakt med beskidte genstande eller overflader.",
+        "q12": "Hvilke forholdsregler skal jeg tage, hvis jeg har kæledyr?",
+        "a12": "Hold kæledyr væk fra din tatovering, mens den heler, for at undgå risiko for infektion.",
+        "q13": "Hvor meget vand skal jeg drikke efter at have fået en tatovering?",
+        "a13": "Drik 2-3 liter vand om dagen i de første 4-5 dage for at hjælpe med at fremskynde helingsprocessen.",
+        "q14": "Kan jeg træne efter at have fået en ny tatovering?",
+        "a14": "Træn med stor forsigtighed. Undgå kontaktsport og aktiviteter, der kan strække huden for meget eller forårsage overdreven sved. Hvis du skal træne, skal du sørge for at rense din tatovering grundigt bagefter."
+    },
+
+    "__Comment__APPOINTMENTS__PAGE": "Appointments Page",
+    "heading6": "Book din tatoveringssession",
+    "appointmentsdescription": "Nedenfor kan du se mine ledige tider. En heldagssession koster 1000 kr, hvoraf 500 kr er et depositum. Dette er en foreløbig booking; jeg vil kontakte dig for designreferencer, tatoveringsidéer og betalingsinstruktioner efter du har booket."
 }
+
+
