@@ -16,7 +16,6 @@ const GalleryPage = () => {
         <meta name="keywords" content="tattoo gallery, fine-line tattoos, pointillism tattoos, Rebeca, Rbinks, tattoo apprentice, Aarhus, Denmark, tattoo designs" />
         <meta name="author" content="Rbinks - Rebeca" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.rbinks.dk/gallery" />
       </Helmet>
       <div className='container mx-auto'>
         <motion.h2

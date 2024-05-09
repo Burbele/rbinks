@@ -16,7 +16,6 @@ const AppointmentsPage = () => {
         <meta name="keywords" content="book tattoo session, tattoo appointment, affordable tattoos, Rebeca, Rbinks, Epic Ink Studio, Aarhus, Denmark, custom tattoo designs" />
         <meta name="author" content="Rbinks - Rebeca" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.rbinks.dk/appointments" />
       </Helmet>
       <div className='container mx-auto'>
         <motion.h2

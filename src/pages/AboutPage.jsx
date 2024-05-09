@@ -17,7 +17,6 @@ const AboutPage = () => {
         <meta name="keywords" content="Rebeca, tattoo apprentice, Aarhus, Denmark, Rbinks, tattoo artist, tattoo journey, tattoo experience, fine art" />
         <meta name="author" content="Rbinks - Rebeca" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.rbinks.dk/about" />
       </Helmet>
       <div className='container mx-auto'>
         <motion.h2

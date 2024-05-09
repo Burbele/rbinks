@@ -11,7 +11,6 @@ const AftercarePage = () => {
         <meta name="keywords" content="tattoo aftercare, tattoo healing, Rebeca, Rbinks, tattoo care tips, new tattoo care, avoid infection, tattoo healing process" />
         <meta name="author" content="Rbinks - Rebeca" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://www.rbinks.dk/aftercare" />
       </Helmet>
       <AftercareFAQ />
     </section>
