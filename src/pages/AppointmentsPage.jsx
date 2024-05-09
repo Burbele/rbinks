@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Calendly from '../components/Calendly';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
@@ -9,6 +10,14 @@ const AppointmentsPage = () => {
 
   return (
     <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 items-center'>
+      <Helmet>
+        <title>Book a Tattoo Session | Rbinks - Tattoo Appointments</title>
+        <meta name="description" content="Book a full day tattoo session with Rebeca at Epic Ink Studio. Work on large projects or multiple smaller tattoos. Secure your booking with a 500 kr deposit." />
+        <meta name="keywords" content="book tattoo session, tattoo appointment, affordable tattoos, Rebeca, Rbinks, Epic Ink Studio, Aarhus, Denmark, custom tattoo designs" />
+        <meta name="author" content="Rbinks - Rebeca" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.rbinks.dk/appointments" />
+      </Helmet>
       <div className='container mx-auto'>
         <motion.h2
           variants={fadeIn('right')}

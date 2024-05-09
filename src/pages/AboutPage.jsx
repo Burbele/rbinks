@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import aboutPicture from '../img/about/about2.jpg';
@@ -10,6 +11,14 @@ const AboutPage = () => {
 
   return (
     <section className='bg-[#f9f9f9] section relative mt-[120px] lg:mt-[150px] pt-16 items-center'>
+      <Helmet>
+        <title>About Rebeca | Rbinks - Tattoo Apprentice in Aarhus, Denmark</title>
+        <meta name="description" content="Learn more about Rebeca, a tattoo apprentice based in Aarhus, Denmark. Discover her journey, experience, and educational background in the world of tattooing and fine art." />
+        <meta name="keywords" content="Rebeca, tattoo apprentice, Aarhus, Denmark, Rbinks, tattoo artist, tattoo journey, tattoo experience, fine art" />
+        <meta name="author" content="Rbinks - Rebeca" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.rbinks.dk/about" />
+      </Helmet>
       <div className='container mx-auto'>
         <motion.h2
           variants={fadeIn('right')}
