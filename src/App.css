@@ -40,17 +40,12 @@
   }
 
   /* Custom styles for scrolling */
-  .overflow-auto {
-    @apply overflow-auto;
+  .calendly-wrapper {
+    @apply h-screen overflow-hidden flex flex-col;
   }
 
-  .iframe-container {
-    @apply overflow-auto;
-    -webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS */
-    touch-action: manipulation;
-  }
-
-  iframe {
-    touch-action: manipulation;
+  .calendly-iframe {
+    @apply w-full h-full flex-grow;
+    touch-action: manipulation; /* Ensures iframe handles touch actions */
   }
 }
