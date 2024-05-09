@@ -1,50 +1,59 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import LanguageSelector from './components/LanguageSelector'
+// import components
+import Layout from './components/Layout';
 // import pages
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
 import AftercarePage from './pages/AftercarePage';
 import AppointmentsPage from './pages/AppointmentsPage';
-import Footer from './components/Footer';
-import Copyright from './components/Copyright';
-import Header from './components/Header';
 
 const router = createBrowserRouter([
   {
-    path: '/*',
-    element: <HomePage />,
+    path: '/',
+    element: (
+      <Layout>
+        <HomePage />
+      </Layout>
+    ),
   },
   {
     path: '/about',
-    element: <AboutPage />,
+    element: (
+      <Layout>
+        <AboutPage />
+      </Layout>
+    ),
   },
   {
     path: '/gallery',
-    element: <GalleryPage />,
+    element: (
+      <Layout>
+        <GalleryPage />
+      </Layout>
+    ),
   },
   {
     path: '/aftercare',
-    element: <AftercarePage />,
+    element: (
+      <Layout>
+        <AftercarePage />
+      </Layout>
+    ),
   },
   {
     path: '/appointments',
-    element: <AppointmentsPage />,
-  }
+    element: (
+      <Layout>
+        <AppointmentsPage />
+      </Layout>
+    ),
+  },
 ]);
 
 function App() {
-  
-
-  return (
-      <div className='max-w-[1920px] mx-auto overflow-hidden bg-white'>
-        <Header />
-        <RouterProvider router={router} />
-        <Footer />
-        <Copyright />
-      </div>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

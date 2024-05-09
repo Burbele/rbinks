@@ -11,19 +11,19 @@ const NavMobile = () => {
         <nav className='w-full h-full flex flex-col justify-evenly overflow-hidden'>
             <ul className='flex flex-col justify-center items-center gap-y-6 py-6 mb-8'>
                 <li>
-                    <Link to="/" className='text-2xl font-primary uppercase'>{navhome}</Link>
+                    <Link to="/" className='text-2xl font-primary uppercase' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navhome}</Link>
                 </li>
                 <li>
-                    <Link to="/about" className='text-2xl font-primary uppercase'>{navabout}</Link>
+                    <Link to="/about" className='text-2xl font-primary uppercase' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navabout}</Link>
                 </li>
                 <li>
-                    <Link to="/gallery" className='text-2xl font-primary uppercase'>{navgallery}</Link>
+                    <Link to="/gallery" className='text-2xl font-primary uppercase' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navgallery}</Link>
                 </li>
                 <li>
-                    <Link to="/aftercare" className='text-2xl font-primary uppercase'>{navaftercare}</Link>
+                    <Link to="/aftercare" className='text-2xl font-primary uppercase' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navaftercare}</Link>
                 </li>
                 <li>
-                    <Link to="/appointments" className='text-2xl font-primary uppercase'>{navappointments}</Link>
+                    <Link to="/appointments" className='text-2xl font-primary uppercase' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navappointments}</Link>
                 </li>
             </ul>
             <div className='text-2xl'>

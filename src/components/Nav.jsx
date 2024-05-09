@@ -10,19 +10,19 @@ const Nav = () => {
         <nav>
             <ul className='flex gap-x-[58px]'>
                 <li>
-                    <Link to="/" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navhome}</Link>
+                    <Link to="/" className='link hover:border-b-2 hover:border-dark transition duration-300' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navhome}</Link>
                 </li>
                 <li>
-                    <Link to="/about" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navabout}</Link>
+                    <Link to="/about" className='link hover:border-b-2 hover:border-dark transition duration-300' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navabout}</Link>
                 </li>
                 <li>
-                    <Link to="/gallery" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navgallery}</Link>
+                    <Link to="/gallery" className='link hover:border-b-2 hover:border-dark transition duration-300' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navgallery}</Link>
                 </li>
                 <li>
-                    <Link to="/aftercare" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navaftercare}</Link>
+                    <Link to="/aftercare" className='link hover:border-b-2 hover:border-dark transition duration-300' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navaftercare}</Link>
                 </li>
                 <li>
-                    <Link to="/appointments" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navappointments}</Link>
+                    <Link to="/appointments" className='link hover:border-b-2 hover:border-dark transition duration-300' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{navappointments}</Link>
                 </li>
             </ul>
         </nav>

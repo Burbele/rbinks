@@ -55,16 +55,16 @@ const Footer = () => {
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>{linkname}</div>
             <ul className='flex flex-col gap-y-4 text-[#dbdbdb]'>
               <li>
-                <Link to="/about" className='hover:text-white transition'>{linkabout}</Link>
+                <Link to="/about" className='hover:text-white transition' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{linkabout}</Link>
               </li>
               <li>
-                <Link to="/gallery" className='hover:text-white transition'>{linkgallery}</Link>
+                <Link to="/gallery" className='hover:text-white transition' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{linkgallery}</Link>
               </li>
               <li>
-                <Link to="/aftercare" className='hover:text-white transition'>{linkaftercare}</Link>
+                <Link to="/aftercare" className='hover:text-white transition' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{linkaftercare}</Link>
               </li>
               <li>
-                <Link to="/appointments" className='hover:text-white transition'>{linkappointment}</Link>
+                <Link to="/appointments" className='hover:text-white transition' onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}>{linkappointment}</Link>
               </li>
             </ul>
           </motion.div>
