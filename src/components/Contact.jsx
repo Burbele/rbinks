@@ -55,7 +55,7 @@ const Contact = () => {
                     <div>
                       <FaEnvelope />
                     </div>
-                    <div>{email}</div>
+                    <div className='font-medium'>{email}</div>
                   </div>
                   <a className='font-medium border-b border-dark pb-[5px]' target='_blank' href='https://www.google.com/maps/dir//Viborgvej+142,+st,+8210+Aarhus/@56.1671629,10.1620179,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464c15b0d2483b09:0x8232700d07325149!2m2!1d10.1635437!2d56.1678441?entry=ttu'>
                     {directions}

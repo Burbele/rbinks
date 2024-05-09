@@ -83,12 +83,12 @@ const Footer = () => {
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>{socialname}</div>
             <div className='flex flex-col gap-y-2'>
               <div className='flex items-center gap-x-[10px]'>
-                <div><IoLogoInstagram /></div>
-                <div><a href="https://www.instagram.com/r.b.ink.s/" target="_blank">{social1}</a></div>
+                <div className='text-2xl'><IoLogoInstagram /></div>
+                <div className='font-medium'><a href="https://www.instagram.com/r.b.ink.s/" target="_blank">{social1}</a></div>
               </div>
               <div className='flex items-center gap-x-[10px] mt-4'>
-                <div><IoLogoTiktok /></div>
-                <div><a href="https://www.tiktok.com/@r.b.ink.s" target="_blank">{social2}</a></div>
+                <div className='text-2xl'><IoLogoTiktok /></div>
+                <div className='font-medium'><a href="https://www.tiktok.com/@r.b.ink.s" target="_blank">{social2}</a></div>
               </div>
             </div>
           </motion.div>

@@ -4,7 +4,7 @@ import AftercareFAQ from '../components/AftercareFAQ';
 
 const AftercarePage = () => {
   return (
-    <section className='section relative mt-[40px] lg:mt-0'>
+    <section className='bg-[#f9f9f9] section relative mt-[120px] lg:mt-[150px] pt-16 items-center'>
      <AftercareFAQ />
     </section>
   );

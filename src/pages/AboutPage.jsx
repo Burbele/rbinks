@@ -19,7 +19,7 @@ const AboutPage = () => {
       </div>
       <div className='container mx-auto grid w-full grid-cols-1 md:grid-cols-7 gap-16 justify-between'>
         <div className='col-span-1 md:col-span-4 flex flex-col items-start justify-start'>
-          <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+          <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>About me</h2>
           <p className='font-medium'>My name is Rebeca, and I am a Bristol University Fine Art graduate with a deep passion for art. As an aspiring tattoo apprentice,
             I am on an exciting journey to combine my love for artistic expression with the unique medium of tattooing.</p>
           <p className='my-4 font-medium'>Drawing inspiration from my fine art background, I strive to create tattoos that are not only visually captivating but also

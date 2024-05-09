@@ -3,9 +3,6 @@ import { fullGalleryData } from '../data';
 import { PhotoAlbum } from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
-import { useTranslation } from 'react-i18next';
 
 const slides = fullGalleryData.images.map(({original, width,height})=> ({
   src: original,
@@ -16,22 +13,12 @@ const slides = fullGalleryData.images.map(({original, width,height})=> ({
 const FullGallery = () => {
 
   const [index, setIndex] = useState(-1);
-  const { t } = useTranslation();
   const { images } = fullGalleryData;
 
 
   return (
-    <section className='section relative mt-[40px] lg:mt-0'>
-      <div className='container mx-auto'>
-        <motion.h2
-          variants={fadeIn('up')}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.6 }}
-          className='h2 max-w-[470px] lg:mb-20'>
-          {t('heading22')}
-        </motion.h2>
-      </div>
+    <section className='relative mt-[40px] lg:mt-0'>
+      
       <div className='mb-8 lg:mb-20'>
          <PhotoAlbum 
         onClick={(event, photo, index) => setIndex(index)}
