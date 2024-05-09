@@ -11,7 +11,7 @@ const AppointmentsPage = () => {
   return (
     <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 items-center'>
       <Helmet>
-        <title>TEEST Book a Tattoo Session | Rbinks - Tattoo Appointments</title>
+        <title>Book a Tattoo Session | Rbinks - Tattoo Appointments</title>
         <meta name="description" content="Book a full day tattoo session with Rebeca at Epic Ink Studio. Work on large projects or multiple smaller tattoos. Secure your booking with a 500 kr deposit." />
         <meta name="keywords" content="book tattoo session, tattoo appointment, affordable tattoos, Rebeca, Rbinks, Epic Ink Studio, Aarhus, Denmark, custom tattoo designs" />
         <meta name="author" content="Rbinks - Rebeca" />
@@ -31,7 +31,15 @@ const AppointmentsPage = () => {
           {t('appointmentsdescription')}
         </p>
       </div>
-      <Calendly />
+      <div className="iframe-container bg-[#f9f9f9] h-[1000px] md:h-[1000px] lg:h-[1000px] relative overflow-auto">
+        <iframe
+          src="https://calendly.com/rebecabianca1211/tattoo-appointment"
+          className="w-full h-full"
+          frameBorder="0"
+          title="Calendly Appointment"
+          style={{ touchAction: 'manipulation' }}
+        ></iframe>
+      </div>
     </section>
   );
 };
