@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import { IoLogoInstagram } from 'react-icons/io';
 import { IoLogoTiktok } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const staggerContainer = {
   hidden: {},
@@ -54,16 +55,16 @@ const Footer = () => {
             <div className='font-primary text-xl uppercase tracking-[0.08em] mb-6'>{linkname}</div>
             <ul className='flex flex-col gap-y-4 text-[#dbdbdb]'>
               <li>
-                <a href="/about" className='hover:text-white transition' target="_blank">{linkabout}</a>
+                <Link to="/about" className='hover:text-white transition'>{linkabout}</Link>
               </li>
               <li>
-                <a href="/gallery" className='hover:text-white transition' target="_blank">{linkgallery}</a>
+                <Link to="/gallery" className='hover:text-white transition'>{linkgallery}</Link>
               </li>
               <li>
-                <a href="/aftercare" className='hover:text-white transition' target="_blank">{linkaftercare}</a>
+                <Link to="/aftercare" className='hover:text-white transition'>{linkaftercare}</Link>
               </li>
               <li>
-                <a href="/appointments" className='hover:text-white transition' target="_blank">{linkappointment}</a>
+                <Link to="/appointments" className='hover:text-white transition'>{linkappointment}</Link>
               </li>
             </ul>
           </motion.div>
@@ -84,11 +85,11 @@ const Footer = () => {
             <div className='flex flex-col gap-y-2'>
               <div className='flex items-center gap-x-[10px]'>
                 <div className='text-2xl'><IoLogoInstagram /></div>
-                <div className='font-medium'><a href="https://www.instagram.com/r.b.ink.s/" target="_blank">{social1}</a></div>
+                <div className='font-medium'><a href="https://www.instagram.com/r.b.ink.s/" target="_blank" rel="noopener noreferrer">{social1}</a></div>
               </div>
               <div className='flex items-center gap-x-[10px] mt-4'>
                 <div className='text-2xl'><IoLogoTiktok /></div>
-                <div className='font-medium'><a href="https://www.tiktok.com/@r.b.ink.s" target="_blank">{social2}</a></div>
+                <div className='font-medium'><a href="https://www.tiktok.com/@r.b.ink.s" target="_blank" rel="noopener noreferrer">{social2}</a></div>
               </div>
             </div>
           </motion.div>

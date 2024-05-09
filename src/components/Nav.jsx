@@ -1,27 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Nav = () => {
     const { t } = useTranslation();
-    const { navhome, navabout, navgallery, navaftercare, navappointments } = t("navData");
+    const { navhome, navabout, navgallery, navaftercare, navappointments } = t("navData", { returnObjects: true });
 
     return (
         <nav>
             <ul className='flex gap-x-[58px]'>
                 <li>
-                    <a href="/" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navhome}</a>
+                    <Link to="/" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navhome}</Link>
                 </li>
                 <li>
-                    <a href="/about" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navabout}</a>
+                    <Link to="/about" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navabout}</Link>
                 </li>
                 <li>
-                    <a href="/gallery" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navgallery}</a>
+                    <Link to="/gallery" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navgallery}</Link>
                 </li>
                 <li>
-                    <a href="/aftercare" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navaftercare}</a>
+                    <Link to="/aftercare" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navaftercare}</Link>
                 </li>
                 <li>
-                    <a href="/appointments" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navappointments}</a>
+                    <Link to="/appointments" className='link hover:border-b-2 hover:border-dark transition duration-300'>{navappointments}</Link>
                 </li>
             </ul>
         </nav>
