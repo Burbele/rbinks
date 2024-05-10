@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { FlagIcon } from "react-flag-kit";
 
 const languages = [
-    { code: "en", lang: "", countryCode: "GB" },
-    { code: "dk", lang: "", countryCode: "DK" },
+    { code: "en", countryCode: "GB" },
+    { code: "dk", countryCode: "DK" },
 ];
 
 const LanguageSelector = () => {
@@ -19,12 +19,11 @@ const LanguageSelector = () => {
                 <button
                     key={lng.code}
                     className={`flex items-center gap-2 px-4 py-2 rounded-md border ${
-                        lng.code === i18n.language ? "selected" : "opacity-50"
+                        lng.code === i18n.language ? "opacity-100" : "opacity-50"
                     }`}
                     onClick={() => changeLanguage(lng.code)}
                 >
-                    <FlagIcon code={lng.countryCode} size={24} /> 
-                    {lng.lang}
+                    <FlagIcon code={lng.countryCode} size={24} />
                 </button>
             ))}
         </div>
@@ -32,4 +31,3 @@ const LanguageSelector = () => {
 };
 
 export default LanguageSelector;
-
