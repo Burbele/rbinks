@@ -16,6 +16,14 @@ const Header = () => {
     });
   }, []);
 
+  useEffect(() => {
+    if (navMobile) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [navMobile]);
+
   return (
     <header
       className={`${
