@@ -29,7 +29,7 @@ const GallerySection = () => {
           variants={fadeIn('up')}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.6 }}
           className='h2 max-w-[370px] lg:mb-20'>
           {t('heading2')}
         </motion.h2>
@@ -38,7 +38,7 @@ const GallerySection = () => {
         variants={fadeIn('up')}
         initial='hidden'
         whileInView={'show'}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className='mb-8 lg:mb-20'>
          <PhotoAlbum 
         onClick={(event, photo, index) => setIndex(index)}
@@ -56,7 +56,7 @@ const GallerySection = () => {
         variants={fadeIn('up')}
         initial='hidden'
         whileInView={'show'}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         className='flex justify-center'>
         <Link to='/gallery' className='btn btn-lg btn-dark'
         onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}

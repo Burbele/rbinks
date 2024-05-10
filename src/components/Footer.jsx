@@ -31,7 +31,7 @@ const Footer = () => {
           variants={staggerContainer}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           className='text-white flex flex-col lg:flex-row lg:justify-between gap-x-5 gap-y-14'>
           <motion.div
             variants={fadeIn('up')}
