@@ -9,7 +9,7 @@ const AppointmentsPage = () => {
   const { t } = useTranslation();
 
   return (
-    <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 flex flex-col items-center h-screen overflow-hidden'>
+    <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 flex flex-col items-center h-full'>
       <Helmet>
         <title>Book a Tattoo Session | Rbinks - Tattoo Appointments</title>
         <meta name="description" content="Book a full day tattoo session with Rebeca at Epic Ink Studio. Work on large projects or multiple smaller tattoos. Secure your booking with a 500 kr deposit." />
