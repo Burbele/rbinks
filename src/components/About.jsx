@@ -21,7 +21,7 @@ const About = () => {
             className='flex flex-col lg:flex-row flex-1'
           >
             <div
-              className='text-[360px] xl:text-[720px] leading-none font-tertiary lg:-tracking-[0.055em] bg-about bg-no-repeat bg-right bg-clip-text text-transparent'
+              className='text-[360px] xl:text-[720px] leading-none font-tertiary lg:-tracking-[0.055em] bg-about bg-no-repeat bg-right bg-clip-text text-transparent bg-contain xl:bg-auto'
             >
               01
             </div>
