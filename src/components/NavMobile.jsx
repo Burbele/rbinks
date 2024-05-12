@@ -13,7 +13,7 @@ const NavMobile = ({ setNavMobile }) => {
   };
 
   return (
-    <nav className='w-full h-full flex flex-col justify-between overflow-hidden pb-20'>
+    <nav className='w-full h-full flex flex-col justify-evenly overflow-hidden'>
       <ul className='flex flex-col justify-center items-center gap-y-6 py-6 mb-8'>
         <li>
           <Link to="/" className='text-2xl font-primary uppercase' onClick={handleLinkClick}>
@@ -41,7 +41,7 @@ const NavMobile = ({ setNavMobile }) => {
           </Link>
         </li>
       </ul>
-      <div className='fixed bottom-8 w-full flex justify-center'>
+      <div className='pb-20'>
         <LanguageSelector />
       </div>
     </nav>
