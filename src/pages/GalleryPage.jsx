@@ -22,8 +22,8 @@ const GalleryPage = () => {
           variants={fadeIn('right')}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.6 }}
-          className='h2 max-w-full lg:mb-20'>
+          viewport={{ once: true, amount: 0.6 }}
+          className='h2 max-w-full lg:mb-10 xl:flex xl:justify-center'>
           {t('heading22')}
         </motion.h2>
       </div>
