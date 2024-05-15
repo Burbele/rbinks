@@ -479,14 +479,14 @@ export const galleryData = {
         height: 540,
       },
       {
-        category: 'Micro-realism',
+        category: 'Fine-line',
         src: GalleryImg51,
         original: GalleryImg51,
         width: 465,
         height: 412,
       },
       {
-        category: 'Micro-realism',
+        category: 'Fine-line',
         src: GalleryImg52,
         original: GalleryImg52,
         width: 465,
