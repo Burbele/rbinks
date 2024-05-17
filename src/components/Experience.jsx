@@ -40,7 +40,7 @@ const Experience = () => {
             variants={fadeIn('right')}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: false, amount: 0.6 }}
+            viewport={{ once: true, amount: 0.6 }}
             className='h2 max-w-full lg:mb-20 mt-20 text-left mb-20'>
             {t('subtitle3')}
           </motion.h3>

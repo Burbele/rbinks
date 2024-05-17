@@ -59,6 +59,7 @@
 
     "__Comment__Contacts": "Contacts Section",
     "heading3": "Get in touch with me:",
+    "msgconfirmation": "Message sent!",
     "information": {
         "studio": "Epic Ink Tattoo Studio",
         "location": "Aarhus, Denmark",
@@ -98,6 +99,12 @@
 
     "__Comment__GALLERY__PAGE": "Gallery Page",
     "heading22": "My gallery",
+    "tab1": "Show all",
+    "tab2": "Fine-line",
+    "tab3": "Micro-realism",
+    "tab4": "Realism",
+    "tab5": "Other",
+    "btnText5": "Load more",
 
 
 

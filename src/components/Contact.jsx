@@ -70,7 +70,7 @@ const Contact = () => {
               <input name='user_email' className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4' placeholder={youremail} type='email' required />
               <input name='message' className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4' placeholder={message} type='text' required />
               <button className='btn btn-sm btn-dark self-start'>{btnText4}</button>
-              {messageSent && <div className='text-green-500'>Message sent!</div>}
+              {messageSent && <div className='text-green-500'>{t('msgconfirmation')}</div>}
             </form>
           </motion.div>
         </div>
