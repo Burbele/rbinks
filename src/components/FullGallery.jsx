@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { PhotoAlbum } from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import { IoMdArrowForward } from 'react-icons/io';
 import { fullGalleryData } from '../data';
 import { useTranslation } from 'react-i18next';
@@ -14,6 +15,8 @@ const FullGallery = () => {
   const [imageCount, setImageCount] = useState(16);
 
   const { images } = fullGalleryData;
+  const zoomRef = useRef(null); // Create a ref for the Zoom plugin
+
   const tabMapping = {
     'tab1': 'Show all',
     'tab2': 'Fine-line',
@@ -79,6 +82,19 @@ const FullGallery = () => {
           open={index >= 0}
           index={index}
           close={() => setIndex(-1)}
+          plugins={[Zoom]} // Add the Zoom plugin
+          zoom={{
+            ref: zoomRef,
+            maxZoomPixelRatio: 3,
+            zoomInMultiplier: 2,
+            doubleTapDelay: 300,
+            doubleClickDelay: 300,
+            doubleClickMaxStops: 3,
+            keyboardMoveDistance: 50,
+            wheelZoomDistanceFactor: 100,
+            pinchZoomDistanceFactor: 100,
+            scrollToZoom: true,
+          }}
         />
         {imageCount < filteredImages.length && (
           <div className='text-center my-8 flex justify-center'>

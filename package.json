@@ -30,7 +30,7 @@
     "react-photo-album": "^1.16.1",
     "react-router-dom": "^6.22.3",
     "sass": "^1.74.1",
-    "yet-another-react-lightbox": "^2.1.1"
+    "yet-another-react-lightbox": "^3.18.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
