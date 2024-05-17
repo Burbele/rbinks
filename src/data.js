@@ -465,14 +465,14 @@ export const galleryData = {
         height: 412,
       },
       {
-        category: 'Macro-realism',
+        category: 'Micro-realism',
         src: GalleryImg49,
         original: GalleryImg49,
         width: 465,
         height: 412,
       },
       {
-        category: 'Macro-realism',
+        category: 'Micro-realism',
         src: GalleryImg50,
         original: GalleryImg50,
         width: 465,
