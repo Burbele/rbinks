@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
-import Calendly from '../components/Calendly';
+import Loading from '../components/Loading';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useTranslation } from 'react-i18next';
+
+// Lazy load the Calendly component
+const Calendly = lazy(() => import('../components/Calendly'));
 
 const AppointmentsPage = () => {
   const { t } = useTranslation();
@@ -30,7 +33,9 @@ const AppointmentsPage = () => {
           {t('appointmentsdescription')}
         </p>
       </div>
-      <Calendly />
+      <Suspense fallback={<Loading />}>
+        <Calendly />
+      </Suspense>
     </section>
   );
 };

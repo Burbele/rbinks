@@ -5,16 +5,15 @@ import 'yet-another-react-lightbox/styles.css';
 import { IoMdArrowForward } from 'react-icons/io';
 import { fullGalleryData } from '../data';
 import { useTranslation } from 'react-i18next';
+import LazyImage from './LazyImage';
 
 const FullGallery = () => {
   const { t } = useTranslation();
-
   const [index, setIndex] = useState(-1);
-  const [activeTab, setActiveTab] = useState('tab1'); 
-  const [imageCount, setImageCount] = useState(16); 
+  const [activeTab, setActiveTab] = useState('tab1');
+  const [imageCount, setImageCount] = useState(16);
 
   const { images } = fullGalleryData;
-
   const tabMapping = {
     'tab1': 'Show all',
     'tab2': 'Fine-line',
@@ -23,13 +22,13 @@ const FullGallery = () => {
     'tab5': 'Other'
   };
 
-  const tabs = Object.keys(tabMapping); 
+  const tabs = Object.keys(tabMapping);
   const filteredImages = images.filter(image =>
     activeTab === 'tab1' ? true : image.category === tabMapping[activeTab]
   );
 
   const loadMoreImages = () => {
-    setImageCount(prevCount => prevCount + 16); 
+    setImageCount(prevCount => prevCount + 16);
   };
 
   const displayedImages = filteredImages.slice(0, imageCount);
@@ -45,7 +44,7 @@ const FullGallery = () => {
                   key={tab}
                   onClick={() => {
                     setActiveTab(tab);
-                    setImageCount(16); 
+                    setImageCount(16);
                   }}
                   className={`whitespace-nowrap py-2 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-all duration-300 ease-in-out capitalize tracking-tighter
                     ${activeTab === tab ? 'border-dark text-dark' : 'border-transparent text-gray-500 hover:text-dark hover:border-dark'}`}
@@ -60,7 +59,17 @@ const FullGallery = () => {
 
       <div className='w-full pt-4'>
         <PhotoAlbum
-          photos={displayedImages}
+          photos={displayedImages.map(image => ({
+            ...image,
+            renderPhoto: ({ photo }) => (
+              <LazyImage
+                src={photo.src}
+                alt={`Image ${photo.src}`}
+                width={photo.width}
+                height={photo.height}
+              />
+            ),
+          }))}
           onClick={(event, photo, index) => setIndex(index)}
           layout="rows"
           style={{ width: '100%' }}

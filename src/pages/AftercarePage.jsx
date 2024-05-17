@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
-import AftercareFAQ from '../components/AftercareFAQ';
+import Loading from '../components/Loading';
+
+// Lazy load the AftercareFAQ component
+const AftercareFAQ = lazy(() => import('../components/AftercareFAQ'));
 
 const AftercarePage = () => {
   return (
@@ -12,7 +15,9 @@ const AftercarePage = () => {
         <meta name="author" content="Rbinks - Rebeca" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
-      <AftercareFAQ />
+      <Suspense fallback={<Loading />}>
+        <AftercareFAQ />
+      </Suspense>
     </section>
   );
 };

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
+import Loading from '../components/Loading';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import aboutPicture from '../img/about/about2.jpg';
-import Experience from '../components/Experience';
 import { useTranslation } from 'react-i18next';
+
+// Lazy load the Experience component
+const Experience = lazy(() => import('../components/Experience'));
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -40,7 +43,9 @@ const AboutPage = () => {
           <img src={aboutPicture} alt='' className='w-full h-auto rounded-2xl' />
         </div>
       </div>
-      <Experience />
+      <Suspense fallback={<Loading />}>
+        <Experience />
+      </Suspense>
     </section>
   );
 };

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
-import FullGallery from '../components/FullGallery';
+import Loading from '../components/Loading';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useTranslation } from 'react-i18next';
+
+// Lazy load the FullGallery component
+const FullGallery = lazy(() => import('../components/FullGallery'));
 
 const GalleryPage = () => {
   const { t } = useTranslation();
@@ -27,7 +30,9 @@ const GalleryPage = () => {
           {t('heading22')}
         </motion.h2>
       </div>
-      <FullGallery />
+      <Suspense fallback={<Loading />}>
+        <FullGallery />
+      </Suspense>
     </section>
   );
 };

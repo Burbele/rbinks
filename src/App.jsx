@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-// import components
 import Layout from './components/Layout';
-// import pages
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import GalleryPage from './pages/GalleryPage';
-import AftercarePage from './pages/AftercarePage';
-import AppointmentsPage from './pages/AppointmentsPage';
+import ErrorBoundary from './components/ErrorBoundary';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const GalleryPage = lazy(() => import('./pages/GalleryPage'));
+const AftercarePage = lazy(() => import('./pages/AftercarePage'));
+const AppointmentsPage = lazy(() => import('./pages/AppointmentsPage'));
+
+const Loading = () => <div>Loading...</div>;
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
       <Layout>
-        <HomePage />
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <HomePage />
+          </Suspense>
+        </ErrorBoundary>
       </Layout>
     ),
   },
@@ -22,7 +28,11 @@ const router = createBrowserRouter([
     path: '/about',
     element: (
       <Layout>
-        <AboutPage />
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <AboutPage />
+          </Suspense>
+        </ErrorBoundary>
       </Layout>
     ),
   },
@@ -30,7 +40,11 @@ const router = createBrowserRouter([
     path: '/gallery',
     element: (
       <Layout>
-        <GalleryPage />
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <GalleryPage />
+          </Suspense>
+        </ErrorBoundary>
       </Layout>
     ),
   },
@@ -38,7 +52,11 @@ const router = createBrowserRouter([
     path: '/aftercare',
     element: (
       <Layout>
-        <AftercarePage />
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <AftercarePage />
+          </Suspense>
+        </ErrorBoundary>
       </Layout>
     ),
   },
@@ -46,7 +64,11 @@ const router = createBrowserRouter([
     path: '/appointments',
     element: (
       <Layout>
-        <AppointmentsPage />
+        <ErrorBoundary>
+          <Suspense fallback={<Loading />}>
+            <AppointmentsPage />
+          </Suspense>
+        </ErrorBoundary>
       </Layout>
     ),
   },
