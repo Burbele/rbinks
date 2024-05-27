@@ -1,6 +1,6 @@
 # Rbinks - Tattoo Apprentice Portfolio
 
-![Rbinks Logo](src/img/header/logo.png)
+![Rbinks Logo](src/img/header/banner.png)
 
 ## Overview
 Rbinks is the portfolio website of Rebeca Bianca Serban, a tattoo apprentice based in Aarhus, Denmark. This project showcases Rebeca's unique and elegant tattoo designs and provides a platform for clients to book tattoo sessions easily. The website is built using modern web development technologies including React, Framer Motion, and Tailwind CSS.
