@@ -66,6 +66,10 @@ import GalleryImg64 from '../src/img/gallery/64.png';
 import GalleryImg65 from '../src/img/gallery/65.png';
 import GalleryImg66 from '../src/img/gallery/66.png';
 import GalleryImg67 from '../src/img/gallery/67.png';
+import GalleryImg68 from '../src/img/gallery/68.png';
+import GalleryImg69 from '../src/img/gallery/69.png';
+import GalleryImg70 from '../src/img/gallery/70.png';
+import GalleryImg71 from '../src/img/gallery/71.png';
 
 import Logo from '../src/img/header/logo.png';
 
@@ -104,8 +108,8 @@ export const galleryData = {
         height: 540,
       },
       {
-        src: GalleryImg6,
-        original: GalleryImg6,
+        src: GalleryImg68,
+        original: GalleryImg68,
         width: 464,
         height: 412,
       },
@@ -116,8 +120,8 @@ export const galleryData = {
         height: 540,
       },
       {
-        src: GalleryImg8,
-        original: GalleryImg8,
+        src: GalleryImg71,
+        original: GalleryImg71,
         width: 465,
         height: 412,
       },
@@ -598,6 +602,34 @@ export const galleryData = {
         category: 'Fine-line',
         src: GalleryImg67,
         original: GalleryImg67,
+        width: 465,
+        height: 412,
+      },
+      {
+        category: 'Micro-realism',
+        src: GalleryImg68,
+        original: GalleryImg68,
+        width: 465,
+        height: 412,
+      },
+      {
+        category: 'Micro-realism',
+        src: GalleryImg69,
+        original: GalleryImg69,
+        width: 465,
+        height: 412,
+      },
+      {
+        category: 'Micro-realism',
+        src: GalleryImg70,
+        original: GalleryImg70,
+        width: 465,
+        height: 540,
+      },
+      {
+        category: 'Micro-realism',
+        src: GalleryImg71,
+        original: GalleryImg71,
         width: 465,
         height: 412,
       },
