@@ -14,9 +14,7 @@ const Contact = () => {
 
     // Send email using emailjs
     emailjs
-      .sendForm('service_ax9tupp', 'template_u0vufrg', form.current, {
-        publicKey: '7wDBvUSbnHzsBO8a0',
-      })
+      .sendForm('service_ax9tupp', 'template_u0vufrg', form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then(
         () => {
           console.log('SUCCESS!');
@@ -24,7 +22,7 @@ const Contact = () => {
           setTimeout(() => setMessageSent(false), 5000); // Reset confirmation message after 5 seconds
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.error('FAILED...', error.text);
         }
       );
 
