@@ -1,12 +1,11 @@
 import React, { Suspense, lazy } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Loading from '../components/Loading';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import aboutPicture from '../img/about/about2.jpg';
 import { useTranslation } from 'react-i18next';
 
-// Lazy load the Experience component
 const Experience = lazy(() => import('../components/Experience'));
 
 const AboutPage = () => {

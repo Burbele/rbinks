@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import { IoMdArrowForward } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
 
+// Prepare slides for Lightbox from gallery data
 const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
   width,
@@ -17,8 +18,8 @@ const slides = galleryData.images.map(({ original, width, height }) => ({
 }));
 
 const GallerySection = () => {
-  const [index, setIndex] = useState(-1);
-  const { t } = useTranslation();
+  const [index, setIndex] = useState(-1); // State for currently selected image in Lightbox
+  const { t } = useTranslation(); // Translation hook for multi-language support
   const { images } = galleryData;
 
   // Create a ref for the Zoom plugin
@@ -27,6 +28,7 @@ const GallerySection = () => {
   return (
     <section className='bg-[#f9f9f9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
+        {/* Section heading */}
         <motion.h2
           variants={fadeIn('up')}
           initial='hidden'
@@ -36,6 +38,7 @@ const GallerySection = () => {
           {t('heading2')}
         </motion.h2>
       </div>
+      {/* Photo gallery */}
       <motion.div
         variants={fadeIn('up')}
         initial='hidden'
@@ -43,17 +46,17 @@ const GallerySection = () => {
         viewport={{ once: true, amount: 0.2 }}
         className='mb-8 lg:mb-20'>
         <PhotoAlbum
-          onClick={(event, photo, index) => setIndex(index)}
+          onClick={(event, photo, index) => setIndex(index)} // Open Lightbox on image click
           layout='rows'
           photos={images}
         />
         <Lightbox
           slides={slides}
           styles={{ container: { background: 'rgba(0,0,0,.9)' } }}
-          open={index >= 0}
+          open={index >= 0} // Open Lightbox when index is non-negative
           index={index}
-          close={() => setIndex(-1)}
-          plugins={[Zoom]}
+          close={() => setIndex(-1)} // Close Lightbox
+          plugins={[Zoom]} // Add the Zoom plugin
           zoom={{
             ref: zoomRef,
             maxZoomPixelRatio: 3,
@@ -68,6 +71,7 @@ const GallerySection = () => {
           }}
         />
       </motion.div>
+      {/* Button to view full gallery */}
       <motion.div
         variants={fadeIn('up')}
         initial='hidden'

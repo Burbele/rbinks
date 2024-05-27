@@ -1,3 +1,4 @@
+// Importing images for the gallery
 import GalleryImg1 from '../src/img/gallery/1.png';
 import GalleryImg2 from '../src/img/gallery/2.png';
 import GalleryImg3 from '../src/img/gallery/3.png';
@@ -68,6 +69,7 @@ import GalleryImg67 from '../src/img/gallery/67.png';
 
 import Logo from '../src/img/header/logo.png';
 
+// Data for the main gallery on home page
 export const galleryData = {
 
     images: [
@@ -122,10 +124,12 @@ export const galleryData = {
     ],
   };
 
+  // Data for the header including the logo
   export const headerData = {
     logo: Logo,
   };
 
+  // Data for the full gallery with categories and all images
   export const fullGalleryData = {
     images: [
       {

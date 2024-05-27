@@ -1,8 +1,7 @@
 import React, { Suspense, lazy } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Loading from '../components/Loading';
 
-// Lazy load the AftercareFAQ component
 const AftercareFAQ = lazy(() => import('../components/AftercareFAQ'));
 
 const AftercarePage = () => {

@@ -1,18 +1,17 @@
 import React, { Suspense, lazy } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Loading from '../components/Loading';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useTranslation } from 'react-i18next';
 
-// Lazy load the Calendly component
 const Calendly = lazy(() => import('../components/Calendly'));
 
 const AppointmentsPage = () => {
   const { t } = useTranslation();
 
   return (
-    <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 flex flex-col items-center h-full'>
+    <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 flex flex-col items-center'>
       <Helmet>
         <title>Book a Tattoo Session | Rbinks - Tattoo Appointments</title>
         <meta name="description" content="Book a full day tattoo session with Rebeca at Epic Ink Studio. Work on large projects or multiple smaller tattoos. Secure your booking with a 500 kr deposit." />

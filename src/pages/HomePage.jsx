@@ -1,8 +1,7 @@
 import React, { Suspense, lazy } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Loading from '../components/Loading';
 
-// Lazy load the components
 const Hero = lazy(() => import('../components/Hero'));
 const About = lazy(() => import('../components/About'));
 const GallerySection = lazy(() => import('../components/GallerySection'));

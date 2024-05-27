@@ -10,13 +10,14 @@ import LazyImage from './LazyImage';
 
 const FullGallery = () => {
   const { t } = useTranslation();
-  const [index, setIndex] = useState(-1);
-  const [activeTab, setActiveTab] = useState('tab1');
-  const [imageCount, setImageCount] = useState(16);
+  const [index, setIndex] = useState(-1); // State for currently selected image in Lightbox
+  const [activeTab, setActiveTab] = useState('tab1'); // State for active tab
+  const [imageCount, setImageCount] = useState(16); // State for number of images to display
 
   const { images } = fullGalleryData;
   const zoomRef = useRef(null); // Create a ref for the Zoom plugin
 
+  // Mapping tabs to categories
   const tabMapping = {
     'tab1': 'Show all',
     'tab2': 'Fine-line',
@@ -31,13 +32,14 @@ const FullGallery = () => {
   );
 
   const loadMoreImages = () => {
-    setImageCount(prevCount => prevCount + 16);
+    setImageCount(prevCount => prevCount + 16); // Load more images when button is clicked
   };
 
-  const displayedImages = filteredImages.slice(0, imageCount);
+  const displayedImages = filteredImages.slice(0, imageCount); // Images to be displayed
 
   return (
     <section className='w-full'>
+      {/* Navigation tabs */}
       <div className='border-b border-gray-200'>
         <div className='container mx-auto px-4 sm:px-6'>
           <div className='max-w-4xl mx-auto py-4'>
@@ -47,7 +49,7 @@ const FullGallery = () => {
                   key={tab}
                   onClick={() => {
                     setActiveTab(tab);
-                    setImageCount(16);
+                    setImageCount(16); // Reset image count when tab is changed
                   }}
                   className={`whitespace-nowrap py-2 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-all duration-300 ease-in-out capitalize tracking-tighter
                     ${activeTab === tab ? 'border-dark text-dark' : 'border-transparent text-gray-500 hover:text-dark hover:border-dark'}`}
@@ -60,6 +62,7 @@ const FullGallery = () => {
         </div>
       </div>
 
+      {/* Image gallery */}
       <div className='w-full pt-4'>
         <PhotoAlbum
           photos={displayedImages.map(image => ({
@@ -73,7 +76,7 @@ const FullGallery = () => {
               />
             ),
           }))}
-          onClick={(event, photo, index) => setIndex(index)}
+          onClick={(event, photo, index) => setIndex(index)} // Open Lightbox on image click
           layout="rows"
           style={{ width: '100%' }}
         />
@@ -81,7 +84,7 @@ const FullGallery = () => {
           slides={displayedImages.map(({ src, width, height }) => ({ src, width, height }))}
           open={index >= 0}
           index={index}
-          close={() => setIndex(-1)}
+          close={() => setIndex(-1)} // Close Lightbox
           plugins={[Zoom]} // Add the Zoom plugin
           zoom={{
             ref: zoomRef,

@@ -1,3 +1,4 @@
+/* tailwind.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +6,7 @@
 /* apply some general styles */
 @layer base {
   body {
-    @apply font-secondary text-lg text-dark  bg-[#E5E5E5];
+    @apply font-secondary text-lg text-dark bg-[#E5E5E5];
   }
   .section {
     @apply py-[40px] lg:py-[160px];
@@ -37,5 +38,14 @@
   }
   .btn-link {
     @apply px-0 h-auto text-dark hover:text-dark/90 transition-all;
+  }
+
+  /* Custom styles for scrolling */
+  .calendly-wrapper {
+    @apply flex flex-col items-center justify-center w-full h-full;
+  }
+
+  .calendly-iframe {
+    @apply w-full h-screen min-h-[100vh];
   }
 }

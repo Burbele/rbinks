@@ -1,11 +1,10 @@
 import React, { Suspense, lazy } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Loading from '../components/Loading';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useTranslation } from 'react-i18next';
 
-// Lazy load the FullGallery component
 const FullGallery = lazy(() => import('../components/FullGallery'));
 
 const GalleryPage = () => {

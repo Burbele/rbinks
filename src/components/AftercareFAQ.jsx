@@ -1,15 +1,16 @@
 import React from 'react';
-import AftercareQ from '../components/AftercareQ';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
-import { useTranslation } from 'react-i18next';
+import AftercareQ from '../components/AftercareQ'; // Component for individual FAQ items
+import { motion } from 'framer-motion'; // Animation library
+import { fadeIn } from '../variants'; // Custom animation variants
+import { useTranslation } from 'react-i18next'; // Translation hook
 
 function AftercareFAQ({ bgColor }) {
-    const { t } = useTranslation();
+    const { t } = useTranslation(); // Translation function
 
     return (
         <div className={bgColor}>
             <div className="py-4 mx-auto w-full px-4 max-w-4xl">
+                {/* Animated heading */}
                 <motion.h2 
                     variants={fadeIn('right')}
                     initial='hidden'
@@ -23,6 +24,7 @@ function AftercareFAQ({ bgColor }) {
                 </p>
                 <br className="border-b border-gray-100" />
                 <div className="space-y-4">
+                    {/* FAQ items using AftercareQ component */}
                     <AftercareQ
                         question={t('aftercare.q1')}
                         answer={t('aftercare.a1')}

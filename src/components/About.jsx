@@ -1,18 +1,19 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
-import { Link } from 'react-router-dom';
-import { IoMdArrowForward } from 'react-icons/io';
-import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion'; // Animation library
+import { fadeIn } from '../variants'; // Custom animation variants
+import { Link } from 'react-router-dom'; // Router for navigation
+import { IoMdArrowForward } from 'react-icons/io'; // Arrow icon
+import { useTranslation } from 'react-i18next'; // Translation hook
 
 const About = () => {
-  const { t } = useTranslation();
-  const { line1, line2 } = t('description');
+  const { t } = useTranslation(); // Translation function
+  const { line1, line2 } = t('description'); // Descriptions from translation
 
   return (
     <section className='lg:py-16 xl:pb-[160px]'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row gap-x-[70px] items-center'>
+          {/* Animated number section */}
           <motion.div
             variants={fadeIn('right')}
             initial='hidden'
@@ -26,6 +27,7 @@ const About = () => {
               01
             </div>
           </motion.div>
+          {/* Animated text section */}
           <motion.div
             variants={fadeIn('left')}
             initial='hidden'
@@ -38,6 +40,7 @@ const About = () => {
               <div className='max-w-[530px] text-grey'>
                 <p className='mb-6'>{line1}</p>
                 <p className='mb-9'>{line2}</p>
+                {/* Link to About page */}
                 <Link
                   to='/about'
                   className='btn btn-lg btn-link'

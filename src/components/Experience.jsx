@@ -4,11 +4,12 @@ import { fadeIn } from '../variants';
 import LiIcon from './LiIcon';
 import { useTranslation } from 'react-i18next';
 
+// Component to display each experience detail
 const Details = ({ type, time, place, info }) => {
-  const ref = useRef(null);
+  const ref = useRef(null); // Reference for each list item
   return (
     <li ref={ref} className='my-8 first:mt-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
-      <LiIcon reference={ref} />
+      <LiIcon reference={ref} /> {/* Custom icon component */}
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
@@ -26,7 +27,7 @@ const Details = ({ type, time, place, info }) => {
 
 const Experience = () => {
   const { t } = useTranslation();
-  const ref = useRef(null);
+  const ref = useRef(null); // Reference for the scroll container
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"]
@@ -46,6 +47,7 @@ const Experience = () => {
           </motion.h3>
         </div>
         <div ref={ref} className='w-full max-w-[800px] mx-auto relative md:flex md:flex-row-reverse'>
+          {/* Scroll progress indicator */}
           <motion.div
             style={{ scaleY: scrollYProgress }}
             className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'

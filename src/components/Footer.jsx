@@ -7,6 +7,7 @@ import { IoLogoInstagram } from 'react-icons/io';
 import { IoLogoTiktok } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
+// Staggered container animation configuration
 const staggerContainer = {
   hidden: {},
   show: {
@@ -33,6 +34,8 @@ const Footer = () => {
           whileInView={'show'}
           viewport={{ once: true, amount: 0.1 }}
           className='text-white flex flex-col lg:flex-row lg:justify-between gap-x-5 gap-y-14'>
+          
+          {/* About section */}
           <motion.div
             variants={fadeIn('up')}
             className='flex-1 flex flex-col gap-y-6 lg:w-[25%] lg:mr-5'> 
@@ -49,6 +52,8 @@ const Footer = () => {
               </div>
             </div>
           </motion.div>
+          
+          {/* Quick links section */}
           <motion.div
             variants={fadeIn('up')}
             className='flex-1 flex flex-col lg:ml-5 lg:mr-5'> 
@@ -68,6 +73,8 @@ const Footer = () => {
               </li>
             </ul>
           </motion.div>
+          
+          {/* Program section */}
           <motion.div
             variants={fadeIn('up')}
             className='flex-1 flex flex-col lg:ml-5 lg:mr-5'> 
@@ -78,6 +85,8 @@ const Footer = () => {
               <li>{day3}</li>
             </ul>
           </motion.div>
+          
+          {/* Social media links section */}
           <motion.div
             variants={fadeIn('up')}
             className='flex-1 flex flex-col lg:ml-5'> 
