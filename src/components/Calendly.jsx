@@ -8,6 +8,7 @@ const Calendly = () => {
         className="calendly-iframe"
         frameBorder="0"
         title="Calendly Appointment"
+        style={{ minHeight: '1350px' }}
       ></iframe>
     </div>
   );
