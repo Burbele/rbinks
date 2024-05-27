@@ -3,20 +3,24 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import ErrorBoundary from './components/ErrorBoundary';
 
+// Lazy load the page components
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const GalleryPage = lazy(() => import('./pages/GalleryPage'));
 const AftercarePage = lazy(() => import('./pages/AftercarePage'));
 const AppointmentsPage = lazy(() => import('./pages/AppointmentsPage'));
 
+// Loading component to show while a page is being lazy loaded
 const Loading = () => <div>Loading...</div>;
 
+// Define the routes for the application
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
       <Layout>
         <ErrorBoundary>
+          {/* Suspense component to lazy load the HomePage */}
           <Suspense fallback={<Loading />}>
             <HomePage />
           </Suspense>
@@ -29,6 +33,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ErrorBoundary>
+          {/* Suspense component to lazy load the AboutPage */}
           <Suspense fallback={<Loading />}>
             <AboutPage />
           </Suspense>
@@ -41,6 +46,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ErrorBoundary>
+          {/* Suspense component to lazy load the GalleryPage */}
           <Suspense fallback={<Loading />}>
             <GalleryPage />
           </Suspense>
@@ -53,6 +59,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ErrorBoundary>
+          {/* Suspense component to lazy load the AftercarePage */}
           <Suspense fallback={<Loading />}>
             <AftercarePage />
           </Suspense>
@@ -65,6 +72,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ErrorBoundary>
+          {/* Suspense component to lazy load the AppointmentsPage */}
           <Suspense fallback={<Loading />}>
             <AppointmentsPage />
           </Suspense>

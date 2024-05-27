@@ -6,14 +6,16 @@ import { fadeIn } from '../variants';
 import aboutPicture from '../img/about/about2.jpg';
 import { useTranslation } from 'react-i18next';
 
+// Lazy load the Experience component
 const Experience = lazy(() => import('../components/Experience'));
 
 const AboutPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(); // Initialize translation
 
   return (
     <section className='bg-[#f9f9f9] section relative mt-[120px] lg:mt-[150px] pt-16 items-center'>
       <Helmet>
+        {/* Page metadata for SEO */}
         <title>About Rebeca | Rbinks - Tattoo Apprentice in Aarhus, Denmark</title>
         <meta name="description" content="Learn more about Rebeca, a tattoo apprentice based in Aarhus, Denmark. Discover her journey, experience, and educational background in the world of tattooing and fine art." />
         <meta name="keywords" content="Rebeca, tattoo apprentice, Aarhus, Denmark, Rbinks, tattoo artist, tattoo journey, tattoo experience, fine art" />
@@ -22,7 +24,7 @@ const AboutPage = () => {
       </Helmet>
       <div className='container mx-auto'>
         <motion.h2
-          variants={fadeIn('right')}
+          variants={fadeIn('right')} // Framer Motion for fade-in animation
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: true, amount: 0.6 }}
@@ -33,6 +35,7 @@ const AboutPage = () => {
       <div className='container mx-auto grid w-full grid-cols-1 md:grid-cols-7 gap-16 justify-between'>
         <div className='col-span-1 md:col-span-4 flex flex-col items-start justify-start'>
           <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>{t('subtitle2')}</h2>
+          {/* Description paragraphs */}
           <p className='font-medium text-grey'>{t('aboutpage.about1')}</p>
           <p className='my-4 font-medium text-grey'>{t('aboutpage.about2')}</p>
           <p className='my-4 font-medium text-grey'>{t('aboutpage.about3')}</p>
@@ -43,6 +46,7 @@ const AboutPage = () => {
         </div>
       </div>
       <Suspense fallback={<Loading />}>
+        {/* Render Experience component when it's loaded */}
         <Experience />
       </Suspense>
     </section>

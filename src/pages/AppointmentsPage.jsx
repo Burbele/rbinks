@@ -5,14 +5,15 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { useTranslation } from 'react-i18next';
 
+// Lazy load the Calendly component
 const Calendly = lazy(() => import('../components/Calendly'));
 
 const AppointmentsPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(); // Hook to get translation function
 
   return (
     <section className='bg-[#f9f9f9] relative mt-[120px] lg:mt-[150px] pt-16 flex flex-col items-center'>
-      <Helmet>
+      <Helmet> {/* Manage document head for SEO */}
         <title>Book a Tattoo Session | Rbinks - Tattoo Appointments</title>
         <meta name="description" content="Book a full day tattoo session with Rebeca at Epic Ink Studio. Work on large projects or multiple smaller tattoos. Secure your booking with a 500 kr deposit." />
         <meta name="keywords" content="book tattoo session, tattoo appointment, affordable tattoos, Rebeca, Rbinks, Epic Ink Studio, Aarhus, Denmark, custom tattoo designs" />
@@ -32,7 +33,7 @@ const AppointmentsPage = () => {
           {t('appointmentsdescription')}
         </p>
       </div>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />}> {/* Show loading component while Calendly is being loaded */}
         <Calendly />
       </Suspense>
     </section>

@@ -8,8 +8,8 @@ import Loading from './components/Loading';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <React.Suspense fallback={<Loading />}>
+    <HelmetProvider> {/* Provides context for managing the document head */}
+      <React.Suspense fallback={<Loading />}> {/* Shows a loading component while waiting for lazy-loaded components */}
         <App />
       </React.Suspense>
     </HelmetProvider>
