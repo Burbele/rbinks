@@ -37,14 +37,14 @@
     "__Comment__HOME__PAGE": "Home Page",
     "__Comment__Hero": "Hero Section",
     "title": "Jeg er Rebeca.",
-    "subtitle": "Indfanger unikke historier med delikate linjer og detaljerede prikker – din hud, mit lærred.",
-    "btnText": "book en aftale",
+    "subtitle": "Tatoverer unikke historier med fine linjer og detaljerede prikker – din hud, mit lærred.",
+    "btnText": "Book en tid",
 
     "__Comment__About": "About Section",
     "heading": "Min historie:",
     "description": {
-        "line1": "Siden jeg var barn, har jeg været fascineret af tatoveringer. Jeg dækkede mig selv med midlertidige tatoveringsklistermærker og tegnede designs direkte på min hud med penne. Denne barndomshobby tændte min livslange passion for kunst. Jeg begyndte langsomt min rejse i 2018, da jeg første gang tog en nål op og eksperimenterede med stick & poke-teknikken på mig selv.",
-        "line2": "Efter at have afsluttet en grad i Fine Art fra University of West England, flyttede jeg til Danmark. Her fortsætter jeg min rejse ind i kunstens og tatoveringens verden. Mit arbejde er kendetegnet ved sin fine og elegante stil. Jeg stræber efter at skabe tatoveringer, der ikke kun er visuelt fængslende, men også dybt meningsfulde for hver enkelt person."
+        "line1": "Siden jeg var barn, har jeg været fascineret af tatoveringer. Jeg dækkede mig selv med midlertidige tatoveringsklistermærker og tegnede designs direkte på min hud med kuglepenne. Denne barndomshobby tændte min livslange passion for kunst. Jeg begyndte langsomt min rejse i 2018, da jeg første gang tog en nål op og eksperimenterede med stick & poke-teknikken på mig selv.",
+        "line2": "Efter at have afsluttet en grad i Fine Art fra University of West England, flyttede jeg til Danmark. Her fortsætter jeg min rejse ind i kunstens og tatoveringens verden. Mit arbejde er kendetegnet ved dets fine og elegante stil. Jeg stræber efter at skabe tatoveringer, der ikke kun er visuelt fangende, men også dybt meningsfulde for hver enkelt person."
     },
     "btnText2": "Lær mig at kende",
 
@@ -73,7 +73,7 @@
     "heading4": "Lær mig at kende!",
     "subtitle2": "Om mig",
     "aboutpage": {
-        "about1": "Jeg kommer oprindeligt fra Rumænien, men begyndte virkelig at finde min vej, da jeg flyttede til Storbritannien som teenager. Det var der, jeg blev interesseret i at finde ud af, hvad der får folk til at reagere, og hvordan det forbindes til kunst.",
+        "about1": "Jeg kommer oprindeligt fra Rumænien, men begyndte virkelig at finde min vej, da jeg flyttede til Storbritannien som teenager. Det var der, jeg blev interesseret i at finde ud af, hvad der får folk til at agere, og hvordan det forbindes til kunst.",
         "about2": "I skolen dykkede jeg ned i psykologi, sociologi og kunst og blev tiltrukket af surrealisme. Det handler om at trække idéer frem fra dybet, hvilket hjalp mig med at lære mig selv og andre bedre at kende - og det inspirerer stadig mit arbejde.",
         "about3": "Jeg elsker også at male, tegne og tage billeder, fange øjeblikke der føles som om de kunne vare for evigt. Mine eventyr bragte mig til Danmark, hvor jeg begyndte min rejse ind i tatoveringsverdenen.",
         "about4": "Tatovering gav bare mening for mig. Det er en måde at blande min kunst med de utrolige historier, folk bringer til mig. Der er noget helt særligt ved at skabe kunst, der bliver en del af nogen, og jeg elsker at bygge de forbindelser gennem mit arbejde."
@@ -108,29 +108,29 @@
         "q2": "Hvad er den bedste måde at fjerne folien eller second-skin på?",
         "a2": "Fjern folien eller second-skin med rene hænder. For second-skin er det bedst at fjerne det med vand for at undgå ubehag.",
         "q3": "Hvordan skal jeg rense min nye tatovering?",
-        "a3": "Vask forsigtigt din tatovering med vand eller duftfri sæbe. Sørg for at fjerne al vaseline, blod og overskydende blæk. Påfør ikke ny folie efter rengøring.",
+        "a3": "Vask forsigtigt din tatovering med vand eller duftfri sæbe. Sørg for at al vaseline, blod og overskydende blæk er fjernet. Anvend ikke ny folie efter rensning.",
         "q4": "Hvad skal jeg bruge til at tørre min tatovering?",
-        "a4": "Tør forsigtigt din tatovering med et papirhåndklæde eller et rent bomuldshåndklæde. Undgå at gnide eller kradse tatoveringen.",
+        "a4": "Dup forsigtigt din tatovering tør med et papirhåndklæde eller et rent bomuldshåndklæde. Undgå at gnide eller kradse tatoveringen.",
         "q5": "Hvor ofte skal jeg påføre tatoveringscreme?",
         "a5": "Påfør et meget tyndt lag tatoveringscreme (såsom panthenol eller et lignende produkt) 3-5 gange om dagen.",
         "q6": "Kan jeg udsætte min nye tatovering for sollys?",
-        "a6": "Udsæt ikke din nye tatovering for direkte sollys eller solarium i de første 3 uger.",
+        "a6": "Udsæt ikke din nye tatovering for direkte sollys eller sol/solariebænke i de første 3 uger.",
         "q7": "Hvornår kan jeg begynde at bruge solcreme på min tatovering?",
-        "a7": "Brug ikke solcreme før din tatovering er fuldt helet.",
+        "a7": "Brug ikke solcreme, før din tatovering er helt helet.",
         "q8": "Er det sikkert at svømme efter at have fået en ny tatovering?",
-        "a8": "Undgå at svømme i pooler eller havvand i de første 3 uger efter at have fået din tatovering.",
-        "q9": "Hvilken type tøj skal jeg bære efter at have fået en tatovering?",
+        "a8": "Undgå at svømme i pools eller havvand i de første 3 uger efter at have fået din tatovering.",
+        "q9": "Hvilken type tøj skal jeg have på efter at have fået en tatovering?",
         "a9": "Bær blødt bomuldstøj og lad din tatovering ånde så meget som muligt. Undgå at bære stramt tøj, indtil din tatovering er helt helet.",
-        "q10": "Kan jeg kradse eller pille ved min nye tatovering?",
-        "a10": "Undgå at kradse eller pille ved din tatovering. Dette kan forårsage infektion og skade tatoveringen.",
+        "q10": "Kan jeg klø eller pille ved min nye tatovering?",
+        "a10": "Undgå at klø eller pille ved din tatovering. Dette kan forårsage infektion og skade tatoveringen.",
         "q11": "Skal jeg lade andre røre ved min nye tatovering?",
         "a11": "Lad ikke andre røre ved din tatovering, mens den heler, og undgå kontakt med beskidte genstande eller overflader.",
         "q12": "Hvilke forholdsregler skal jeg tage, hvis jeg har kæledyr?",
-        "a12": "Hold kæledyr væk fra din tatovering, mens den heler, for at undgå risiko for infektion.",
+        "a12": "Hold kæledyr væk fra din tatovering, mens den heler, for at undgå risikoen for infektion.",
         "q13": "Hvor meget vand skal jeg drikke efter at have fået en tatovering?",
         "a13": "Drik 2-3 liter vand om dagen i de første 4-5 dage for at hjælpe med at fremskynde helingsprocessen.",
         "q14": "Kan jeg træne efter at have fået en ny tatovering?",
-        "a14": "Træn med stor forsigtighed. Undgå kontaktsport og aktiviteter, der kan strække huden for meget eller forårsage overdreven sved. Hvis du skal træne, skal du sørge for at rense din tatovering grundigt bagefter."
+        "a14": "Træn med stor forsigtighed. Undgå kontaktsport og aktiviteter, der kan strække huden for meget eller forårsage overdreven sved. Hvis du skal træne, skal du sørge for at rense din tatovering godt bagefter."
     },
 
     "__Comment__APPOINTMENTS__PAGE": "Appointments Page",
