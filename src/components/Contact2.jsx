@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
 import { useTranslation } from 'react-i18next';
-import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { IoLogoInstagram, IoMailOutline } from 'react-icons/io5';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -45,21 +43,15 @@ const Contact = () => {
   };
 
   const { t } = useTranslation();
-  const { studio, location, address, email, directions } = t('information');
+  const { studio, location, email, directions } = t('information');
   const { name, youremail, message, btnText4 } = t('form');
 
   return (
-    <section className='section'>
+    <section className='section bg-[#f9f9f9]'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-y-16'>
-          <motion.div 
-            variants={fadeIn('right')} 
-            initial='hidden' 
-            whileInView={'show'} 
-            viewport={{ once: true, amount: 0.4 }} 
-            className='flex-1'
-          >
-            <h2 className='h2 max-w-[490px]'>{t('heading3')}</h2>
+          <div className='flex-1'>
+            <h2 className='h2 max-w-[490px]'>{t('heading33')}</h2>
             <div className='flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0'>
               <div>
                 <div className='font-primary uppercase font-medium text-xl mb-3'>{studio}</div>
@@ -67,48 +59,43 @@ const Contact = () => {
                 <div className='flex flex-col gap-y-3 mb-8'>
                   <div className='flex items-center gap-[10px]'>
                     <div>
-                      <FaMapMarkerAlt />
+                      <IoLogoInstagram className='text-xl' />
                     </div>
-                    <div className='font-medium'>{address}</div>
+                    <div className='font-medium'>
+                      <a href="https://www.instagram.com/r.b.ink.s/" target="_blank" rel="noopener noreferrer">
+                        @r.b.ink.s
+                      </a>
+                    </div>
                   </div>
                   <div className='flex items-center gap-[10px]'>
                     <div>
-                      <FaEnvelope />
+                      <IoMailOutline className='text-xl' />
                     </div>
                     <div className='font-medium'>{email}</div>
                   </div>
-                  <a className='font-medium border-b border-dark pb-[5px]' target='_blank' href='https://www.google.com/maps/dir//Viborgvej+142,+st,+8210+Aarhus/@56.1671629,10.1620179,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464c15b0d2483b09:0x8232700d07325149!2m2!1d10.1635437!2d56.1678441?entry=ttu'>
-                    {directions}
-                  </a>
                 </div>
               </div>
             </div>
-          </motion.div>
-          <motion.div 
-            variants={fadeIn('left')} 
-            initial='hidden' 
-            whileInView={'show'} 
-            viewport={{ once: true, amount: 0.4 }} 
-            className='flex-1 xl:pl-[40px] flex justify-center items-center'
-          >
+          </div>
+          <div className='flex-1 xl:pl-[40px] flex justify-center items-center'>
             <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-y-10 w-full'>
               <input 
                 name='user_name' 
-                className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4' 
+                className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4 bg-[#f9f9f9]' 
                 placeholder={name} 
                 type='text' 
                 required 
               />
               <input 
                 name='user_email' 
-                className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4' 
+                className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4 bg-[#f9f9f9]' 
                 placeholder={youremail} 
                 type='email' 
                 required 
               />
               <input 
                 name='message' 
-                className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4' 
+                className='border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4 bg-[#f9f9f9]' 
                 placeholder={message} 
                 type='text' 
                 required 
@@ -125,7 +112,7 @@ const Contact = () => {
               <button className='btn btn-sm btn-dark self-start'>{btnText4}</button>
               {messageSent && <div className='text-green-500'>{t('msgconfirmation')}</div>} {/* Confirmation message */}
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

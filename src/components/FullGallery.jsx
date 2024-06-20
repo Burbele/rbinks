@@ -38,7 +38,7 @@ const FullGallery = () => {
   const displayedImages = filteredImages.slice(0, imageCount); // Images to be displayed
 
   return (
-    <section className='w-full'>
+    <section className='max-w-[1920px] mx-auto'>
       {/* Navigation tabs */}
       <div className='border-b border-gray-200'>
         <div className='container mx-auto px-4 sm:px-6'>

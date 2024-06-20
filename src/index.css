@@ -6,7 +6,7 @@
 /* apply some general styles */
 @layer base {
   body {
-    @apply font-secondary text-lg text-dark bg-[#E5E5E5];
+    @apply font-secondary text-lg text-dark bg-[#ffffff];
   }
   .section {
     @apply py-[40px] lg:py-[160px];
@@ -47,5 +47,14 @@
 
   .calendly-iframe {
     @apply w-full h-screen min-h-[100vh];
+  }
+
+  /* Disable motion on smaller screens */
+  @media (max-width: 1024px) {
+    .no-motion {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
   }
 }

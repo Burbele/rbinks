@@ -16,7 +16,10 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '20px',
-        lg: '0',
+        sm: '20px',
+        md: '20px',
+        lg: '50px',
+        xl: '50px',
       },
     },
     // Define custom screen sizes
@@ -24,7 +27,7 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      xl: '1300px',
+      xl: '1280px',
     },
     extend: {
       // Extend default color palette

@@ -12,7 +12,7 @@
     "about": {
         "aboutme": "Om mig",
         "aboutdescription": "Hej, jeg er Rebeca, en tatovørlærling baseret i Aarhus, Danmark. Jeg laver fine, elegante tatoveringer inspireret af kunst og natur.",
-        "aboutaddress": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "aboutaddress": "Viborgvej 142, St. Th., Aarhus V",
         "aboutemail": "rebecabianca1211@gmail.com"
     },
     "links": {
@@ -101,6 +101,7 @@
 
     "__Comment__AFTERCARE__PAGE": "Aftercare Page",
     "heading5": "Din guide til tatoveringspleje",
+    "heading33": "Flere spørgsmål?",
     "aftercaredescription": "Tak fordi du valgte at få en tatovering hos mig! Her er nogle tips til at hjælpe din tatovering med at hele perfekt. Hvis du har nogen spørgsmål, tøv ikke med at kontakte mig!",
     "aftercare": {
         "q1": "Hvor længe skal jeg beholde folien på min nye tatovering?",
@@ -135,7 +136,7 @@
 
     "__Comment__APPOINTMENTS__PAGE": "Appointments Page",
     "heading6": "Book din tatoveringssession",
-    "appointmentsdescription": "Nedenfor kan du se mine ledige tider. En heldagssession koster 1000 kr, med et depositum på 500 kr. Dette er en foreløbig booking; jeg vil kontakte dig for designreferencer, tatoveringsidéer og betalingsinstruktioner efter din booking."
+    "appointmentsdescription": "Nedenfor kan du se mine ledige tider. En heldagssession koster 1400 kr. Dette er en foreløbig booking; jeg vil kontakte dig for designreferencer, tatoveringsidéer og betalingsinstruktioner efter din booking."
 }
 
 

@@ -2,8 +2,9 @@ import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Loading from '../components/Loading';
 
-// Lazy load the AftercareFAQ component
+// Lazy load the components
 const AftercareFAQ = lazy(() => import('../components/AftercareFAQ'));
+const Contact = lazy(() => import('../components/Contact2'));
 
 const AftercarePage = () => {
   return (
@@ -19,6 +20,7 @@ const AftercarePage = () => {
       <Suspense fallback={<Loading />}>
         {/* Render AftercareFAQ component when it's loaded */}
         <AftercareFAQ />
+        <Contact />
       </Suspense>
     </section>
   );

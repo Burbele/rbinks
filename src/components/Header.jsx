@@ -30,9 +30,9 @@ const Header = () => {
     <header
       className={`${
         isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
-      } fixed bg-white left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
+      } fixed bg-white left-0 right-0 z-10 w-full transition-all duration-300`}
     >
-      <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
+      <div className='max-w-[1920px] mx-auto flex justify-between items-center h-full px-4 lg:px-8'>
         <a href='/'>
           <img className='w-[188px] h-[90px]' src={logo} alt='Logo' />
         </a>

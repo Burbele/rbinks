@@ -26,7 +26,7 @@ const GallerySection = () => {
   const zoomRef = useRef(null);
 
   return (
-    <section className='bg-[#f9f9f9] section relative mt-[40px] lg:mt-0'>
+    <section className=' w-full bg-[#f9f9f9] section relative mt-[40px] lg:mt-0'>
       <div className='container mx-auto'>
         {/* Section heading */}
         <motion.h2
@@ -44,7 +44,7 @@ const GallerySection = () => {
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: true, amount: 0.2 }}
-        className='mb-8 lg:mb-20'>
+        className='mb-8 lg:mb-20 max-w-[1920px] mx-auto'>
         <PhotoAlbum
           onClick={(event, photo, index) => setIndex(index)} // Open Lightbox on image click
           layout='rows'

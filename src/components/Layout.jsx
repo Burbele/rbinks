@@ -6,7 +6,7 @@ import Copyright from './Copyright';
 // Layout component to wrap around the main content of the page
 const Layout = ({ children }) => {
   return (
-    <div className='max-w-[1920px] mx-auto overflow-hidden bg-white'>
+    <div className='overflow-hidden bg-white mx-auto'>
       <Header /> {/* Header component */}
       <div>{children}</div> {/* Main content */}
       <Footer /> {/* Footer component */}

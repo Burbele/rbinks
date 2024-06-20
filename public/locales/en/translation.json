@@ -13,7 +13,7 @@
     "about": {
         "aboutme": "About Me",
         "aboutdescription": "Hi, I'm Rebeca, a tattoo apprentice based in Aarhus, Denmark. I craft delicate, elegant tattoos inspired by art and nature.",
-        "aboutaddress": "Viborgvej 142, St. Th., 8210 Aarhus V",
+        "aboutaddress": "Viborgvej 142, St. Th., Aarhus V",
         "aboutemail": "rebecabianca1211@gmail.com"
     },
     "links": {
@@ -110,6 +110,7 @@
 
     "__Comment__AFTERCARE__PAGE": "Aftercare Page",
     "heading5": "Your guide to tattoo aftercare",
+    "heading33": "More questions?",
     "aftercaredescription": "Thanks so much for choosing to get a tattoo with me! Here are some tips to help your tattoo heal perfectly. If you have any questions, don’t hesitate to reach out!",
     "aftercare": {
         "q1": "How long should I keep the foil on my new tattoo?",
@@ -144,5 +145,5 @@
 
     "__Comment__APPOINTMENTS__PAGE": "Appointments Page",
     "heading6": "Book Your Tattoo Session",
-    "appointmentsdescription": "Below you can see my availability. A full day session costs 1000 kr, with a 500 kr deposit required. This is a preliminary booking; I will contact you for design references, tattoo ideas, and payment instructions after you book."
+    "appointmentsdescription": "Below you can see my availability. A full day session costs 1400 kr. This is a preliminary booking; I will contact you for design references, tattoo ideas, and payment instructions after you book."
 }
