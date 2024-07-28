@@ -70,6 +70,13 @@ import GalleryImg68 from '../src/img/gallery/68.png';
 import GalleryImg69 from '../src/img/gallery/69.png';
 import GalleryImg70 from '../src/img/gallery/70.png';
 import GalleryImg71 from '../src/img/gallery/71.png';
+import GalleryImg72 from '../src/img/gallery/72.png';
+import GalleryImg73 from '../src/img/gallery/73.png';
+import GalleryImg74 from '../src/img/gallery/74.png';
+import GalleryImg75 from '../src/img/gallery/75.png';
+import GalleryImg76 from '../src/img/gallery/76.png';
+import GalleryImg77 from '../src/img/gallery/77.png';
+import GalleryImg78 from '../src/img/gallery/78.png';
 
 import Logo from '../src/img/header/logo.png';
 
@@ -84,8 +91,8 @@ export const galleryData = {
         height: 412,
       },
       {
-        src: GalleryImg2,
-        original: GalleryImg2,
+        src: GalleryImg60,
+        original: GalleryImg60,
         width: 465,
         height: 540,
       },
@@ -96,8 +103,8 @@ export const galleryData = {
         height: 412,
       },
       {
-        src: GalleryImg4,
-        original: GalleryImg4,
+        src: GalleryImg39,
+        original: GalleryImg39,
         width: 465,
         height: 540,
       },
@@ -108,8 +115,8 @@ export const galleryData = {
         height: 540,
       },
       {
-        src: GalleryImg68,
-        original: GalleryImg68,
+        src: GalleryImg19,
+        original: GalleryImg19,
         width: 464,
         height: 412,
       },
@@ -120,8 +127,8 @@ export const galleryData = {
         height: 540,
       },
       {
-        src: GalleryImg71,
-        original: GalleryImg71,
+        src: GalleryImg33,
+        original: GalleryImg33,
         width: 465,
         height: 412,
       },
@@ -235,7 +242,7 @@ export const galleryData = {
         height: 412,
       },
       {
-        category: 'Fine-line',
+        category: 'Other',
         src: GalleryImg15,
         original: GalleryImg15,
         width: 465,
@@ -263,7 +270,7 @@ export const galleryData = {
         height: 540,
       },
       {
-        category: 'Other',
+        category: 'Fine-line',
         src: GalleryImg19,
         original: GalleryImg19,
         width: 465,
@@ -361,7 +368,7 @@ export const galleryData = {
         height: 412,
       },
       {
-        category: 'Fine-line',
+        category: 'Micro-realism',
         src: GalleryImg33,
         original: GalleryImg33,
         width: 465,
@@ -403,7 +410,7 @@ export const galleryData = {
         height: 412,
       },
       {
-        category: 'Other',
+        category: 'Micro-realism',
         src: GalleryImg39,
         original: GalleryImg39,
         width: 465,
@@ -522,7 +529,7 @@ export const galleryData = {
         height: 540,
       },
       {
-        category: 'Fine-line',
+        category: 'Micro-realism',
         src: GalleryImg56,
         original: GalleryImg56,
         width: 465,
@@ -585,7 +592,7 @@ export const galleryData = {
         height: 412,
       },
       {
-        category: 'Fine-line',
+        category: 'Other',
         src: GalleryImg65,
         original: GalleryImg65,
         width: 465,
@@ -621,16 +628,65 @@ export const galleryData = {
       },
       {
         category: 'Micro-realism',
-        src: GalleryImg70,
-        original: GalleryImg70,
+        src: GalleryImg71,
+        original: GalleryImg71,
         width: 465,
         height: 540,
       },
       {
         category: 'Micro-realism',
-        src: GalleryImg71,
-        original: GalleryImg71,
+        src: GalleryImg70,
+        original: GalleryImg70,
         width: 465,
+        height: 412,
+      },
+      {
+        category: 'Fine-line',
+        src: GalleryImg72,
+        original: GalleryImg72,
+        width: 465,
+        height: 412,
+      },
+      {
+        category: 'Other',
+        src: GalleryImg73,
+        original: GalleryImg73,
+        width: 465,
+        height: 412,
+      },
+      {
+        category: 'Fine-line',
+        src: GalleryImg74,
+        original: GalleryImg74,
+        width: 465,
+        height: 540,
+      },
+      {
+        category: 'Fine-line',
+        src: GalleryImg75,
+        original: GalleryImg75,
+        width: 465,
+        height: 412,
+      },
+      {
+        category: 'Fine-line',
+        src: GalleryImg76,
+        original: GalleryImg76,
+        width: 465,
+        height: 540,
+      },
+      {
+        category: 'Fine-line',
+        src: GalleryImg77,
+        original: GalleryImg77,
+        width: 465,
+        height: 540,
+      },
+      {
+        category: 'Fine-line',
+        src: GalleryImg78,
+        original: GalleryImg78,
+        width: 464,
         height: 412,
       },
     ],
